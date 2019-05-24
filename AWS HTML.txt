@@ -1,0 +1,177 @@
+#!/bin/bash
+yum install httpd -y
+echo '<h1> Response from server-1 <h1>' > /var/www/html/index.html
+chkconfig httpd on
+service httpd start
+
+
+
+===================================
+jenkins :
+
+https://github.com/wakaleo/game-of-life
+https://cloudonaut.io/jenkins-templates-for-aws-cloudformation/
+https://templates.cloudonaut.io/en/stable/jenkins/
+https://github.com/deepueng40/maven/
+https://github.com/kliakos/sparkjava-war-example
+https://github.com/gkrout/mvnproj.git
+
+https://jenkins.io/doc/book/glossary//#executor
+
+https://jenkins.io/doc/book/pipeline/
+
+Tomcat installation:
+https://tecadmin.net/steps-to-install-tomcat-server-on-centos-rhel/
+
+https://github.com/jenkinsci/docker/blob/master/README.md
+C:\Program Files (x86)\Jenkins\secrets
+http://localhost:8080/
+https://jenkins.io/doc/
+https://github.com/deepueng40/maven
+https://maven.apache.org/download.cgi
+
+
+run: bookshelf: (pid 1016) 97s; run: log: (pid 1023) 97s
+run: nginx: (pid 839) 101s; run: log: (pid 1307) 94s
+run: oc_bifrost: (pid 720) 104s; run: log: (pid 783) 103s
+run: oc_id: (pid 826) 103s; run: log: (pid 835) 102s
+run: opscode-erchef: (pid 1271) 96s; run: log: (pid 1149) 97s
+run: opscode-expander: (pid 901) 99s; run: log: (pid 991) 99s
+run: opscode-solr4: (pid 879) 100s; run: log: (pid 894) 100s
+run: postgresql: (pid 669) 104s; run: log: (pid 695) 104s
+run: rabbitmq: (pid 3129) 56s; run: log: (pid 1383) 95s
+run: redis_lb: (pid 26879) 202s; run: log: (pid 1270) 96s
+
+
+https://api.bintray.com/content/jfrog/artifactory-rpms/jfrog-artifactory-oss-$latest.rpm;bt_package=jfrog-artifactory-oss-rpm
+https://api.bintray.com/content/jfrog/artifactory/jfrog-artifactory-oss-$latest.zip;bt_package=jfrog-artifactory-oss-zip
+
+https://aws.amazon.com/blogs/devops/running-docker-on-aws-opsworks/
+https://docs.aws.amazon.com/opsworks/latest/userguide/workingcookbook-installingcustom-repo.html
+https://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-basics.html
+https://www.tutorialspoint.com/jenkins/jenkins_backup_plugin.htm
+https://github.com/ybmadhu/web_login_automation
+https://github.com/ybmadhu/Login_Docker_alphine.git
+CloudBees Docker Build and Publish
+
+knife bootstrap windows winrm 52.91.187.161 -x Administrator -N ""
+
+https://docs.chef.io/chef_private_keys.html
+https://docs.chef.io/errors.html
+https://docs.chef.io/roles.html
+
+https://www.qaautomation.co.in/
+
+https://jenkins.io/doc/book/glossary//#executor
+https://wiki.jenkins.io/display/JENKINS/Docker+Plugin
+
+sudo usermod -a -G docker jenkins
+service jenkins start
+
+sudo usermod -a -G root jenkins
+
+sudo service jenkins restart
+
+https://www.youtube.com/watch?v=IGvfN4MhGPE&list=PL2qzCKTbjutJ1zZFYNImrHNbzs6XgIHbI
+https://wiki.jenkins.io/display/JENKINS/Jenkins+Best+Practices
+https://1.bp.blogspot.com/-uV9_rNCJEqk/XBQOIDHP6bI/AAAAAAAABYs/ufdzxYh6mH8nbQPfqNYeiKgZdT10LECowCLcBGAs/s1600/botocreds_site.png
+
+
+https://github.com/aws-samples/aws-cicd-docker-containers
+https://github.com/jicowan/hello-world
+
+
+https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-get-on-ubuntu-16-04
+https://tecadmin.net/install-oracle-java-8-ubuntu-via-ppa/
+https://www.tecmint.com/install-docker-and-learn-containers-in-centos-rhel-7-6/
+https://www.youtube.com/watch?feature=youtu.be&v=x6qQnLTVyTg&app=desktop
+
+
+https://www.youtube.com/user/kshitijpawar1990/videos
+https://www.sonarqube.org/downloads/
+https://docs.sonarqube.org/display/SONARQUBE67/Requirements
+https://devopscube.com/setup-and-configure-sonarqube-on-linux/
+https://www.vultr.com/docs/how-to-install-sonarqube-on-centos-7
+
+
+
+https://jenkins.io/doc/book/pipeline/syntax/#post-conditions
+
+
+jekins issue:
+https://www.quora.com/What-are-your-experiences-with-real-life-Jenkins-issues-and-how-did-you-solve-them
+https://thenewstack.io/many-problems-jenkins-continuous-delivery/
+https://codingcompiler.com/jenkins-interview-questions-answers/
+https://www.janbasktraining.com/blog/jenkins-interview-questions/
+https://www.wisdomjobs.com/e-university/jenkins-interview-questions.html
+https://www.janbasktraining.com/blog/become-a-devops-engineer/
+https://mindmajix.com/jenkins-interview-questions-answers
+
+http://lifuzu.com/blog/2014/04/24/playing-with-jenkins-create-job/
+
+https://github.com/jenkinsci/pipeline-examples/tree/master/declarative-examples
+https://github.com/docker/jenkins-pipeline-scripts/tree/master/src/com/docker
+https://github.com/fabric8io/jenkins-pipeline-library
+https://github.com/jenkinsci/pipeline-examples/blob/master/docs/BEST_PRACTICES.md
+https://github.com/jenkinsci/pipeline-examples/tree/master/pipeline-examples
+https://www.cloudbees.com/blog/top-10-best-practices-jenkins-pipeline-plugin	
+
+
+ansibe
+----------
+
+https://docs.ansible.com/ansible/latest/modules/ec2_module.html
+https://www.ansible.com/2014/02/12/installing-and-building-docker-with-ansible
+https://www.learnitguide.net/2018/03/how-to-use-ansible-vault-to-protect.html
+https://www.tutorialspoint.com/ansible/ansible_yaml_basics.htm
+https://ansible-docs.readthedocs.io/zh/stable-2.0/rst/playbooks_roles.html
+https://www.softwaretestinghelp.com/ansible-playbooks-ansible-vaults/
+https://docs.ansible.com/ansible/latest/modules/yum_module.html
+https://awsbloglink.wordpress.com/2017/11/02/how-to-install-jenkins-using-ansible/
+
+AWS migration
+-------------
+https://docs.aws.amazon.com/vm-import/latest/userguide/vmimport-image-import.html
+
+
+interview questions
+-------------------
+https://www.edureka.co/blog/interview-questions/top-devops-interview-questions-2016/
+https://jivoi.github.io/2016/01/22/linux-sysadm-devops-interview-questions/
+
+
+
+---------------------------------
+real time issue
+https://www.youtube.com/watch?v=WhCbLGnG9JY
+https://www.3pillarglobal.com/insights/devops-troubleshooting-concept
+
+------------------------------------
+Books
+https://learning.oreilly.com/home/
+--------------------------------------
+Jenkins Parallel
+https://engineering.medallia.com/blog/posts/parallelizing-jenkins-pipelines/
+https://issues.jenkins-ci.org/browse/JENKINS-46809?page=com.atlassian.jira.plugin.system.issuetabpanels%3Acomment-tabpanel&showAll=true
+https://devops.stackexchange.com/questions/986/how-to-build-a-complex-parallel-jenkins-pipeline
+https://github.com/javahometech
+https://github.com/geerlingguy
+https://github.com/emmetog
+https://github.com/jfrog/project-examples/tree/master/jenkins-examples/pipeline-examples
+https://github.com/jfrog/project-examples/tree/master/jenkins-examples/pipeline-examples/scripted-examples
+
+Nagios:
+https://www.edureka.co/blog/nagios-tutorial/
+
+troubleshooting
+-------------------
+https://www.bogotobogo.com/DevOps/DevOps-Sys-Admin-Interview-Questions-Linux-Monitoring-System-Application-Performance-Tuning-Tools.php
+https://www.bogotobogo.com/DevOps/DevOps-Sys-Admin-Interview-Questions-Networks.php
+
+Terraform
+---------------
+https://www.bogotobogo.com/DevOps/Terraform/Terraform-Introduction-AWS-elb-nginx.php
+
+Appdynamics
+----------------
+https://vimeo.com/album/3519087
