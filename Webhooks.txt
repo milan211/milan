@@ -1,0 +1,11 @@
+Steps to Generate token:
+manage jenkins-->configure system-->GitHub-->Advanced-->Manage additional GitHub actions-->Convert login and password to token-->Credentials, Add, give user name and password of github-->create token credentials
+Configure with github in jenkins:
+Add GitHub Server-->GitHub server-->Credentials, select the token which you have generated-->Test connection-->apply & Save
+configure in GitHub server:
+select the project-->settings-->Webhooks-->Add webhook-->Payload URL:- http://IP:8080/github-webhook/-->Add webhook
+create a job-->Build Trigger-->select "GitHub hook trigger for GITScm polling"-->save
+
+Another way:
+
+create a job-->Build Trigger-->Poll SCM-->* * * * *-->save-->automatically jenkins will trigger the build any changes made in github project
