@@ -1,0 +1,4802 @@
+			
+					PYTHON
+				------------------------
+
+Python is general purpose language implemented by guido van rossum in 1989 @ mathamatics  & science research center 
+called CWI.CWI is located @ netherlands
+
+Guido van rossum implemented python language by taking different varities of language features like 
+    1) procedure oriented programing languages
+    2) Object Oriented programming languages
+    3) Scriting languages
+    4) Modular proramming languages
+
+Guido van rossum make it available python to public from 1991.By using Python we can implement 
+differnt varieties of applications like
+
+     1) Automation applications
+     2) Data Analytics
+     3) Web Applications
+     4) Scientific applications
+     5) Web Scrapping
+     6) N/W with IOT
+     7) Test Cases
+     8) Gaming applications
+     9) Admin Scripts
+     10) GUI Applications
+     11) Animation applications  & so on........
+
+
+Currently copy rights of Pythos are registered with an open community & non profitable organition called Python s/w foundation.
+
+
+Python s/w which is provided by python s/w foundation is known as "cpython"
+There are so many distributions are available for cpython
+
+   1) Active Python
+   2) Anakonda Python
+   3) iPython
+   4) Pocket Python
+   5) PYPY Python
+
+The current version of CPython is 3.x (3.1 , 3.2 ..... 3.7)
+Download the required python 3.6.4 verion from "http://python.org" website
+
+
+NTFS file system format in windows (No proper security ,But it is user friendly )
+APFS file system in MAC OS
+EXT3 file system format in Linux (user,group,author level security is provided in linux,but not user friendly)
+HDFS this file system is similar to Linux  but with limited differences
+
+
+How to move one OS file system to another file system?
+   1) By using 3rd party s/w like FileZilla we can move one file system to another.
+   2) By using Shares directories also we can move one file system to another.
+
+
+http://pydev.org/updates
+pythonanywhere  --- It is the cloud 
+
+
+We can develop the python prgms in 2 -modes
+    1) Interactive mode
+    2) Batch mode ------| ---> Editors
+		 	| ---> IDE's
+		  	
+
+1) Interactive mode :  The concept of submitting 1-by-1 python statenment explicitly to the python interpritter is known as a Interactive mode.
+
+We can submit 1-by-1 python statment expliccitly to the python interpreter by using python command line shell.
+
+We can open python cmd line shell,by execution python command on cmd prompt or terminal.
+
+		
+In command prompt
+-----------------	
+c:/users/satish>python
+>>>3+4
+>>>'ravi'*3
+>>>x=100
+>>>y=200
+>>>300
+>>>len("ravi")
+>>>4
+>>>quit()
+
+>>>python
+>>> error msg will come
+
+
+Once if you exit from pyhon cmd line prompt ,the work which we have done is going to loss.
+
+Interactive mode is sutable for learning python &
+to test predefined functions functionalities,but it is not sutable for application developement.
+
+2) Batch Mode:  Conept of writing grp of python statements in ur file saving that file extention.py file and submiting entire file in interpritter is know as batch mode
+
+     * We can develop the python files by using the "Editors" or "IDE's"
+     * Different Editors are  Notepad ,Notepad++,EditPlus,Nano,VI,GEdit etc.....
+     * Different IDE's are pycharm(90% usesage) ,eric, eclipse, netbeams, myeclipse etc........
+
+
+Open notepad save file demo.py in any drive and type the code To run open cmd prompt run C:\python Demo.py
+
+Open nano editor by executing following cmd on terminal
+$nano Demp.py
+   x=100
+   y=50
+   print(x+y*x-y)
+    To save the code press   Ctrl+x   ---->   press "Y"
+    To run the code $ python Demo.py
+
+
+Editor DisAdvantages
+---------------------
+By using editors takes longer time .
+By dev the python files by using editors we cann't use code generation tools.
+We can't included external packages.
+We can't perform the automatic debugging operations on python files by using editors.
+
+
+IDE's Advantages
+-----------------
+To overcome the above problems we use the IDE's.Different IDE's are 
+	1) pycharm
+	2) eric
+	3) Eclipse
+	4) NetBeams .......
+
+
+Download and install  the pycharm 
+Open the pychaem IDE by clicking on shortcut
+
+Click on File -> NewProject --> PurePython --> Eneter project name or location as "MyPROJ10AM1"  --> 
+Expand project interpretter  --> Select the radio button called existing interpritter  --> Select the
+python interpritter from the computer --> Click on cereate --> click on Ok
+
+Right Click on project  --> Click on NEW --> Click on python file --> Enter File name as "Demo" -->
+Click on OK
+
+Write the python code in Demo.py file as below -->Click on Run 
+x=100
+y=200
+print(x+y)
+print(x-y)
+
+
+
+Day6
+----
+Any organization usecase or scenarios are 2 parts
+	1) Data
+	2) Operations
+	
+			   |----> cname,cadd,cacount,cbal
+			   |
+	|--------> customer
+	|		   |
+	|		   |---->deposit,witdrawl,balenq
+Bank----
+	|
+	|		   |----->ename,eadd,eid 
+	|		   |
+	|---------> Employee
+			   |
+			   |----->HRA,tax,PF,takehome
+
+
+Data of any organization usecase can be represented in any programming language by 
+using data types and variables.
+
+Every prg language supports data types & variables,but the Dt of any programing 
+language are not going to be same with the data types & variables of another 
+programing languages.
+
+Operations of any organization usecasecan be represented in any programing language
+by using functions or methods.
+
+Every prg language supports functions(c) or Methods(java)
+
+python supports both functions and methods
+
+
+Data Types:
+-----------
+Data types are nothing but some of the keywords of prg language,which are used to 
+specify what type of data has to be store into the variables.
+
+Without specifying the data type to variable, memory alocation will not takes place 
+for the variables.
+
+Without allocating memory space for variable we can't store the data into variable.
+
+Prg languages supports 2-types of datatypes.They are 
+	1) static 
+	2) Dynamic
+
+1) static:
+----------
+In static type supported languages programmer should define the data types to the 
+variables explictly.
+
+Once if we define the data type to the variable explicitly,we can't modify the 
+data type of that variable through out the program execution.
+
+In static dt supported languages,one variable can store only one variety of data.
+c,c++,java,.net,........ languages supports static datatypes
+
+
+2) Dynamic Datatype:
+-------------------
+In dynamic dt suppoted languages programmers should not define the dt's to 
+variables explicitly.
+
+@ the time of execution of prgm,dt of variable is decided based on the data which is assigned to the variable.
+
+Dynamic dt supported languages,one variable can store different varities of data.
+Python,javascript,....... languages are supporting dynamic datatypes.
+
+
+Python supports following data types
+-------------------------------------
+
+1) int
+2) float
+3) complex
+4) bool
+5) str
+6) tuple
+7) list
+8) set
+9) dict
+
+
+Every dt in python language is internally implemented as a class.
+Python dt's are catagoried into 2 types
+
+	1) fundamental types
+	2) collection types
+
+1) Fundamental types :
+----------------------
+
+Fundamental types represented classes objects stores data only.
+Pyhon supports following fundamental types.
+
+    int,float,bool,complex,str
+
+ex: 
+----
+i=1000
+print(i)
+print(type(i))
+print(id(i))
+
+j=200.12
+print(j)
+print(type(j))
+print(id(j))
+
+k=3+4j
+print(k)
+print(type(k))
+print(id(k))
+
+p=True
+print(p)
+print(type(p))
+print(id(p))
+
+q="ravi"
+print(q)
+print(type(q))
+print(id(q))
+
+
+Day7
+-----
+Python supports 2 types of objects 
+	1) immutable objects
+	2) mutable Objects
+
+
+1) immutable objects:
+----------------------
+
+The objects which doesn't allow to modify the data of elements of those objects are known as immutable objects.
+
+We can't create 2 different immutable objects with the same data.
+
+Applying iterations on the immutable objects takes less time.
+
+All funadametal types represented classes & tuple classes objects are immutable objects
+
+ex:
+---
+>>> i=100
+>>> i
+100
+
+>>> id(i)
+1583249984
+
+>>> j=200
+>>> id(j)
+1583253184
+
+>>> i=200
+>>> id(i)
+1583253184
+
+>>> id(j)
+1583253184
+
+
+
+2) mutable Objects
+-------------------
+
+The objects which allows to modify the data are elements of those objects are known as mutable objects.
+
+We can create 2 different mutable objects with the same content.
+
+Applying iterations on mutable objects takes longer time.
+
+ex1:
+----
+>>> x=[10,20,30]
+>>> print(x)
+[10, 20, 30]
+
+>>> print(type(x))
+<class 'list'>
+
+>>> print(id(x))
+1858850308808
+
+>>> x[1]=123
+>>> print(x)
+[10, 123, 30]
+
+>>> print(type(x))
+<class 'list'>
+
+>>> print(id(x))
+1858850308808
+
+
+ex2:
+----
+
+>>> x=[10,20,30]
+>>> print(x)
+[10, 20, 30]
+
+>>> print(id(x))
+2810422411976
+
+>>> y=[10,20,30]
+>>> print(y)
+[10, 20, 30]
+
+>>> print(id(y))
+2810422420232
+
+
+String Handling:
+----------------
+
+Group of characters or sequence of characters is known as string.
+In python, group of characters are stored in "str" class object.
+"str" class object can be created in 2-ways.They are
+	1) '
+	2) '''
+
+1) ' is uses to create str class object with one line
+2) ''' are used to create str class object with one or more lines.
+
+Note:
+------
+1) Application data recomended to represent by using single quotes.
+2) Documentation strings are recomended to represent by using triple quotes.
+3) Every character in the str class object is represented with uniq index.
+4) str class object supports both +ve & -NE indexs.
+5) +ve Index value starts from 0 .And -NE Index starts from -1.
+6) str class objects are iterable objects.
+
+
+Ex:
+---
+x="python"
+print(len(x))
+print(x[2])
+print(x[-2])
+print(x[2:-2])
+print(x[2:])
+print(x[:2])
+
+y="""ravikanth 
+python"""
+print(y)
+print("Length of string is ",len(y))
+print("X index value is " ,y[2])
+
+
+o/p:
+----
+C:\Python36>python "C:\Users\Ravi Kanth\Desktop\test.py"
+9
+v
+t
+vikan
+vikanth
+ra
+ravikanth
+python
+Length of string is  17
+X index value is  v
+
+
+Day 9:
+-------
+
+How to read the data in python program
+---------------------------------------
+We can read the data from keyboard by using predefined function called "input".
+
+The data which  we read from keyboard by using input function is taken in form of 
+string format only.
+
+We can convert string reprented data in form of required format by using type conversion
+functions
+
+ex1:
+----
+fn=input("Enter first Name :")
+ln=input("Enter Last Name :")
+print(fn + ln)
+
+O/P:
+----
+Enter first Name :ravikanth
+Enter Last Name :lella
+ravikanthlella
+
+ex2: How to Type casting from string to integer
+-----
+a=input("Enter first Name :")
+print(type(a))
+fn=int(a)
+print(type(fn))
+b=input("Enter Last Name :")
+print(type(b))
+ln=int(b)
+print(type(ln))
+print(fn+ln)
+
+O/P:
+----
+Enter first Name :10
+<class 'str'>
+<class 'int'>
+Enter Last Name :20
+<class 'str'>
+<class 'int'>
+30
+
+
+ex3:  How to Type casting from string to integer
+----
+a="ravikanth"
+b="hyd"
+c=1000
+d=2000
+e="1234"
+print(a+b)
+print(c+d)
+print(a+e)
+#print(a+c) --> error msg comes
+print(a+str(c))
+print(str(c)+e)
+print(c+int(e))
+
+
+O/P:
+----
+ravikanthhyd
+3000
+ravikanth1234
+ravikanth1000
+10001234
+2234
+
+
+ex:4   ---> To check the existence of character in a string
+-----
+a="ravikanth"
+print('r' in a) # "in" is a operator it used to check whether charatcter is present or not
+
+O/P:
+----
+true
+
+
+Operators:-
+------------
+Operators are nothing but constructs
+
+Operators are used to perform the operations on the data of the objects which are pointed by the operands.
+
+Operators are used to perform the operations on the addresses of the objects which are pointed by the operands.
+
+refer url for magic methods : https://www.python-course.eu/python3_magic_methods.php
+
+With respective to every operator corresponding method is available in python and
+we call those methods as a magic methods.
+
+A method which starts with __ and ends with __ is known as a magic method.
+
+
+Arthematic Operators
+--------------------
+These are used to perform the mathematical operations on the data of the objects
+which are pointed by the operands.
+
+Ex1:
+-----
+x=15
+y=4
+print(x+y)
+print(x-y)
+print(x*y)
+print(x/y)
+print(x%y)
+print(x//y) # floordiv
+print(x**y) # pow
+
+O/P:
+----
+19
+11
+60
+3.75
+3
+3
+50625
+
+
+Comparision Operators:
+----------------------
+These are used to compare the data of the objects which are pointed by the operands
+
+ex:
+---
+x=15
+y=4
+print(x>y)
+print(x<y)
+print(x==y)
+print(x!=y)
+print(x>=y)
+print(x<=y)
+
+O/P:
+----
+True
+False
+False
+True
+True
+False
+
+
+
+Day 10:
+--------
+
+Logical Operators:
+------------------
+Logical operators are used to perform the mathematical & logical operations like
+logical and
+logical or
+logical not
+
+ex:
+---
+x=True
+y=False
+print(x and y)
+print(x or y)
+print(not x)
+
+O/P:
+----
+False
+True
+False
+
+
+Bitwise Operators:
+------------------
+It converts the data in form of binary format,perform the operations on binary data
+and use the results in form of decemial format.
+
+ex:
+---
+x=10
+y=4
+
+print(x&y)--and
+print(x|y)--or
+print(x^y)--ex-or
+print(~x)--complement x
+print(x>>y)--right shift by 4
+print(x<<y)--left shift by 4
+
+
+O/P:
+----
+0
+14
+14
+-11
+0
+160
+
+
+
+Assignment Operators:
+----------------------
+Assignment operators are used to asign the data to the operands.
+Operator	Example		Equivtent to
+--------	-------		------------
+=		x=5		x=5
++=		x+=5		x=x+5
+-=		x-=5		x=x-5
+*=
+/=
+%=		x%=5		x=x%5
+//=		x//=5		x=x//5
+**=		x**=5		x=x**5
+&=		x&=5		x=x&5
+!=		x!=5		x=x!5
+^=              x^=5            x=x^5
+>>=             x>>=5           x=x>>5
+<<=
+
+
+Membership & Identity Operators:
+--------------------------------
+Python supports 2-types of special operators .They are 
+1) Menbership Operators
+2) Identity Operators
+
+
+1) Membership Operators:
+------------------------
+Membership operators are used to search for the required element in the given 
+iterable objects.
+
+in 	  True if value/variable is found in the sequence
+not in	  True if value/variable is not fount in sequence
+
+Ex:
+----
+x="ravikanth"
+
+print('k' in x)
+print('p' in x)
+print('p' not in x)
+print('p' not in x)
+
+O/P:
+----
+True
+False
+True
+True
+
+
+2) Identity Operators:
+----------------------
+Identity Operators are used to compare the addresses of objects which are pointed
+by operands.
+
+Ex1:
+----
+i=1000
+j=2000
+print(i is j) #F
+print(i is not j) #T
+
+
+x=3000
+y=3000
+print(x is y) #T
+print(x is not y) #F
+
+
+Ex2:
+----
+x=[10,20,30]
+y=[40,50,60]
+print(x is y) #F
+print(x is not y) #T
+
+
+
+x=[10,20,30]
+y=[10,20,30]
+print(x is y) #F
+print(x is not y) #T
+
+
+Day11:
+------
+Blocks:
+-------
+The set of statements are following same space indentation is known as a block.
+
+syntax:
+-------
+stmt1 ---> Block
+stmt2
+    stmt3 ---> Block
+    stmt4
+	 stmt5 ---> Block
+	 stmt6
+    stmt7
+    stmt8
+stmt9
+stmt10
+
+Block begins when indentation increases.
+Block can contain another Blocks.
+Block ends when indentation decreases to its containing blocks indentation or to a Zero.
+
+
+Conditions:
+-----------
+Any expression which returns boolean value is known as a condition.
+Every expression is not a condition ,but every condition is a expression.
+
+Control flow statements:
+------------------------
+Control flow statements are used to disturb the normal flow of the execution of the program.
+Python supports 2-types of control flow statements.
+
+1) Conditional statements
+2) Looping statements
+
+1) Conditional statements:
+--------------------------
+Conditional statements are used to decide whether block has to execute or skip the execution of the block based
+on the condition.
+
+Python supports following conditional statements:
+  1) if
+  2) else
+  3) elif
+
+1) if :
+-------
+Condition returns true execute the block otherwise skip the execution block.
+
+syntax 1:
+---------
+if condition:statement
+
+syntax 2:
+---------
+if condition:
+     stmt1
+     stmt2
+     ------
+     ------
+     stmtn
+
+Ex:
+---
+print("begin")
+i=int(input("Enter the +ve number :"))
+if i<10:
+    print("Given number is 1 digit no")
+print("end")
+
+O/P:
+----
+begin
+Enter the +ve number :5
+Given number is 1 digit no
+end
+
+
+
+2) else:
+--------
+else block should be precided by any one of the following blocks.
+  1) if
+  2) elif
+  3) while
+  4) for
+
+else block preciding block condition returns false then only else block will be executed.
+
+syntax:
+-------
+if condition:
+    stmt1
+    -----
+    -----
+    stmtn
+else:
+    stmt1
+    -----
+    -----
+    stmtn
+
+
+ex1:
+----
+print("begin")
+i=int(input("Enter the +ve number :"))
+if i<10:
+    print("Given number is 1 digit no")
+else:
+    print("Given number is >=2 digit Number")
+print("end")
+
+
+O/P:
+----
+begin
+Enter the +ve number :2
+Given number is 1 digit no
+end
+
+
+
+3) elif:
+--------
+elif block should be precideed by "if" or another "elif".
+elif block preceeding block returns false then only control will comes to the elif.
+After reaching the control to elif .If its conditions returns true.Then only it will execute "elif" block.
+
+
+syntax:
+-------
+if condition:
+    stmt1
+    -----
+    -----
+    stmtn
+elif condition:
+    stmt1
+    -----
+    -----
+    stmtn
+
+
+
+ex1:
+----
+print("begin")
+i=int(input("Enter the +ve number :"))
+if i<10:print("Given number is 1 digit no")
+elif i<100:print("Given number is 2 digit number")
+elif i<1000:print("Given number is 3 digit number")
+else:print("Given number is >=4s digit Number")
+print("end")
+
+
+
+O/P:
+----
+begin
+Enter the +ve number :10
+Given number is 2 digit number
+end
+
+
+
+2) Looping statements:
+----------------------
+Looping statements used to execute set of statements repeatedly.
+Python supports 2 looping statements they are 
+   1) while
+   2) for
+
+
+1) while execute set of statements repeatedly until given condition become pass.
+
+while syntax:
+-------------
+while condition:
+    ----------
+    ----------
+
+EX1:
+----
+print("Begin")
+i=1
+while i<=5:
+    print("Welcome :", i)
+    i=i+1
+print("End")
+
+
+O/P:
+----
+Begin
+Welcome : 1
+Welcome : 2
+Welcome : 3
+Welcome : 4
+Welcome : 5
+End
+
+
+EX2:
+----
+print("Begin")
+i=1
+while i<=5:
+    print("Welcome :", i)
+    i=i+1
+else:
+    print("in while else")
+print("End")
+
+
+O/P:
+----
+Begin
+Welcome : 1
+Welcome : 2
+Welcome : 3
+Welcome : 4
+Welcome : 5
+in while else
+End
+
+
+EX3:
+----
+Break is statement & we can use it within looping statements. When ever control reached to the break 
+stmt of loop then loop execution will be terminated without continuing furthur iterations.
+
+print("Begin")
+i=1
+while i<=5:
+    print("Welcome :", i)
+    if i==3:
+        break
+    i=i+1
+else:
+    print("in while else")
+print("End")
+
+
+O/P:
+----
+Begin
+Welcome : 1
+Welcome : 2
+Welcome : 3
+End
+
+
+Ex4:
+----
+print("Begin")
+i=1
+while True:
+    print("Welcome :", i)
+    #if i==5:
+        #break
+    i=i+1
+else:
+    print("in while else")
+print("End")
+
+
+O/P:
+----
+It goes to infinity loop
+
+
+
+Ex5:
+-----
+Continue is a stmt, which we can use within looping stmt's.
+When ever control reached to the continuos stmt of a loop without executing remaining of that 
+iteration control will goes to the next iteration.
+
+print("Begin")
+i=0
+while i<5:
+    i=i+1
+    if i==3:
+        continue
+    print(i)
+print("End")
+
+
+O/P:
+----
+Begin
+1
+2
+4
+5
+End
+
+
+EX6:
+----
+while True:
+    name=input("Enter user name:")
+    if name!='ravilella':
+        print("Invalid username")
+        continue
+    password=input("Hello ravilella what is the password:")
+    if password=='ravilella':
+        break
+print("Access Granted....")
+
+
+O/P:
+----
+Enter user name:ravi
+Invalid username
+Enter user name:ravilella
+Hello ravilella what is the password:ravilella
+Access Granted....
+
+
+EX7:
+----
+x="ravilella"
+i=0
+while i<len(x):
+    print(x[i])
+    i=i+1
+
+
+O/P:
+----
+r
+a
+v
+i
+l
+e
+l
+l
+a
+
+
+EX8:
+----
+x="ravilella"
+i=0
+while i<len(x):
+    print(x[i]*3)
+    i=i+1
+
+O/P:
+----
+rrr
+aaa
+vvv
+iii
+lll
+eee
+lll
+lll
+aaa
+
+
+
+
+2) forloop :
+------------
+For loop execute set of stmts wrt to every element of givn iterable objects.
+
+
+syntax:
+-------
+for varname in iterableobject:
+      ------------
+      ------------
+      ------------
+
+Ex:
+---
+x="ravilella"
+for i in x:
+    print(i*3)
+
+
+O/P:
+----
+rrr
+aaa
+vvv
+iii
+lll
+eee
+lll
+lll
+aaa
+
+
+Range():
+---------
+Range function is a pre-defined function, which is defined in built-in's module
+Range function generate the group of sequence values based on the parameters & store those sequence values
+in a iterable object.
+
+
+Ex:
+----
+x=range(5)
+for i in x:
+    print(i)
+
+x=range(100,105)
+for i in x:
+    print(i)
+
+x=range(10,30,2)
+for i in x:
+    print(i)
+
+x=range(40,30,-2)
+for i in x:
+    print(i)
+
+
+x=range(40,50,-2)
+for i in x:
+    print(i)
+
+
+for i in range(5):
+    print(i)
+
+for i in range(100,105,2):
+    print(i)
+
+for p in range(1,11):
+    print(p,"* 2 =",2*p)
+
+
+    
+
+Built-in functions
+-------------------
+
+Ex1:
+----
+x="python is opensource language"
+print(type(x))
+print(x.upper())
+print(x.lower())
+print(x.isdigit())
+print(x.title())
+y="1234"
+print(y.isdigit())
+
+
+O/P:
+---
+<class 'str'>
+PYTHON IS OPENSOURCE LANGUAGE
+python is opensource language
+False
+Python Is Opensource Language
+True
+
+
+Ex2:
+----
+x="python is opensource language"
+s=x.split(" ")
+for i in s:
+    print(i,len(i),i.upper())
+
+	(OR)
+
+x="python is opensource language"
+for i in x.split():
+    print(i,len(i),i.upper())
+
+	(OR)
+
+for i in "python is opensource language".split():print(i,len(i),i.upper())
+
+
+
+O/P:
+----
+python 6 PYTHON
+is 2 IS
+opensource 10 OPENSOURCE
+language 8 LANGUAGES
+
+
+
+
+Collections:
+------------
+Collection Types:
+
+All collection types represented  classes objects stores other objects.
+
+The objects which are present inside the collection object are technically known as 
+elements of the collection.
+
+All Collections types represented classes objects are iterable objects.
+
+All collection type represented classes provides some methods & by using those methods
+we can perform some operations on the elements of the collection objects.
+
+Python supports following collection types :
+1) List 
+2) Set
+3) Tuple
+4) Dict
+
+1) List :
+---------
+List objects can be created by using [] or by calling list() function.
+List objects are mutable objects.
+The elements of List can be mutable/immutable.
+List supports both +ve & -Ne Indexing.
+Insertion order is preserved in List.
+Duplicate elements are allowed in List.
+Hetrogenious elements are allowed in List.
+
+x:
+---
+a=[]
+print(type(a))
+print(a)
+print(len(a))
+
+y=list()
+print(type(y))
+print(y)
+print(len(y))
+
+z=[10,20.34,True,"ravilella",40,50,40,3+4j]
+print(z)
+
+
+O/P:
+----
+<class 'list'>
+[]
+0
+<class 'list'>
+[]
+0
+[10, 20.34, True, 'ravilella', 40, 50, 40, (3+4j)]
+
+
+ex2: List Indexing & Slicing
+----
+a=[10,20,30,40,50,60]
+print(a)
+print(id(a))
+print(a[2])
+print(a[-2])
+print(a[2:5]) #slicing
+print(a[:4])
+print(a[2:])
+print(a[5:2])
+print(a[-5:-2])
+a[2]=100
+print(a)
+print(id(a))
+
+O/P:
+----
+[10, 20, 30, 40, 50, 60]
+1598598534472
+30
+50
+[30, 40, 50]
+[10, 20, 30, 40]
+[30, 40, 50, 60]
+[]
+[20, 30, 40]
+[10, 20, 100, 40, 50, 60]
+1598598534472
+
+
+ex3:
+----
+a=[10,20,30,40,50,60]
+print(a)
+print(id(a))
+
+while True:
+    i=int(input("Enter a search element:"))
+    if i in a:
+        print("Element is found...")
+        break
+    else:
+        print("Element is not found...")
+        continue
+
+
+O/P:
+----
+[10, 20, 30, 40, 50, 60]
+2752627725640
+Enter a search element:75
+Element is not found...
+Enter a search element:80
+Element is not found...
+Enter a search element:40
+Element is found...
+
+
+ex4: Sum the list elements using for & while
+---
+a=[10,20,30,40,50,60]
+print(id(a))
+sum=0
+for p in a:
+    sum=sum+p
+print(sum)
+
+i=0
+sum1=0
+while i<len(a):
+    sum1=sum1+a[i]
+    i=i+1
+print(sum1)
+
+
+O/P:
+----
+210
+210
+
+ex5:  Unpacking elements of a list
+----
+x=[1000,12.12,True]
+print(x,type(x))
+a,b,c=x
+print(a,type(a))
+print(b,type(b))
+print(c,type(c))
+
+O/P:
+----
+[1000, 12.12, True] <class 'list'>
+1000 <class 'int'>
+12.12 <class 'float'>
+True <class 'bool'>
+
+
+ex6:
+----
+x=[10,20,30,20,40,50]
+print(x)
+
+#help(list())
+
+x.append(90) # Appends the value to the existing List
+print(x)
+
+x.insert(2,60) # Inserting the value based by Index
+print(x)
+
+a=x.copy() # creates the duplicate copy of the list
+print(a)
+
+p=x.count(20) # counts the occurances in a List
+print(p)
+
+q=x.index(90) # prints the index of given value
+print(q)
+
+x.remove(30) # Removes the values from List given by value
+print(x)
+
+x.pop(4) # Removes the value from a List given by Index
+print(x)
+
+z=[400,100,200,300]
+x.extend(z) # it merges the to lists
+print(x)
+
+x.sort() # it sorts in assending order
+print(x)
+
+x.reverse() # it sorts in decending order
+print(x)
+
+help(list)
+
+x.clear() # it clears the values in list
+print(x)
+
+
+O/P:
+----
+[10, 20, 30, 20, 40, 50]
+[10, 20, 30, 20, 40, 50, 90]
+[10, 20, 60, 30, 20, 40, 50, 90]
+[10, 20, 60, 30, 20, 40, 50, 90]
+2
+7
+[10, 20, 60, 20, 40, 50, 90]
+[10, 20, 60, 20, 50, 90]
+[10, 20, 60, 20, 50, 90, 400, 100, 200, 300]
+[10, 20, 20, 50, 60, 90, 100, 200, 300, 400]
+[400, 300, 200, 100, 90, 60, 50, 20, 20, 10]
+[]
+
+
+ex7:
+----
+x="ravilella"  # Here "x" is a String
+print(x)
+y=list(x)
+print(y)
+
+y[3]='p'
+print(y)
+
+z=''
+for p in y:
+    z=z+p
+print(z)
+
+
+O/P:
+----
+ravilella
+['r', 'a', 'v', 'i', 'l', 'e', 'l', 'l', 'a']
+['r', 'a', 'v', 'p', 'l', 'e', 'l', 'l', 'a']
+ravplella
+
+
+Q: Write a prgm  to eleminate duplicate elements of a list?
+
+Ex8: Nested List
+----
+x=[[10,20,30],[40,50,60],[70,80,90]]
+print(x)
+for p in x:
+    print(p,type(p))
+    for q in p:
+        print(q)
+
+
+O/P:
+----
+[[10, 20, 30], [40, 50, 60], [70, 80, 90]]
+[10, 20, 30] <class 'list'>
+10
+20
+30
+[40, 50, 60] <class 'list'>
+40
+50
+60
+[70, 80, 90] <class 'list'>
+70
+80
+90
+
+
+Day 12
+------
+List Comprehensions:
+--------------------
+The concept of generating the elements into the list object by writing some logic 
+into the list is known as a list comprehension.
+
+ex1:
+---
+x=[p for p in range(10)]  --> This is comprehension technique.
+print(x)
+
+    (or)
+
+x=[]			  --> This is nornaml code.
+for p in range(10):
+    x.append(p)
+print(x)
+
+O/P:
+----
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+
+ex2:
+----
+x=[p for p in range(10) if p%2==0]  --> This is comprehension technique.
+print(x)
+
+	(OR)
+
+x=[]				    --> This is nornaml code.
+for p in range(10):
+    if p%2==0:
+        x.append(p)
+print(x)
+
+
+O/P:
+----
+[0, 2, 4, 6, 8]
+[0, 2, 4, 6, 8]
+
+
+ex3:
+----
+x=[p*p for p in range(10) if p%2==0]
+print(x)
+
+y=[q**2 for q in range(10) if q%2!=0]
+print(y)
+
+
+O/P:
+----
+[0, 4, 16, 36, 64]
+[1, 9, 25, 49, 81]
+
+Day:
+----
+Tuple:
+-----
+Tuple objects can be created by using "()"  or by calling "tuple()" or by assigning
+more than one value to a single variable.
+
+Tuple objects are immutable objects.
+
+Insertion order is preserved in tuple.
+
+Duplicate elements are allowed in tuple.
+
+Hetrogenious elemets are allowed in tuple.
+
+Tuple supports both +ve & -Ne indexing.
+
+
+ex1:
+----
+x=()
+print(x)
+print(type(x))
+print(len(x))
+
+y=tuple()
+print(y)
+print(type(y))
+print(len(y))
+
+z=10,20,30
+print(z)
+print(type(z))
+print(len(z))
+
+
+p=(10,20,30,40,10,20,50,10)
+print(p)
+
+q=(100,12.12,True,3+4j)
+print(q)
+
+
+O/P:
+----
+()
+<class 'tuple'>
+0
+()
+<class 'tuple'>
+0
+(10, 20, 30)
+<class 'tuple'>
+3
+(10, 20, 30, 40, 10, 20, 50, 10)
+(100, 12.12, True, (3+4j))
+
+
+
+ex2:
+----
+x=(10,20,30,40,50,60)
+print(x)
+print(x[1])
+print(x[-3])
+print(x[2:5])
+print(x[-5:-1])
+
+for p in x:
+    print(p)
+
+i=0
+while i<len(x):
+    print(x[i])
+    i=i+1
+
+
+O/P:
+----
+(10, 20, 30, 40, 50, 60)
+20
+40
+(30, 40, 50)
+(20, 30, 40, 50)
+10
+20
+30
+40
+50
+60
+10
+20
+30
+40
+50
+60
+
+ex3:
+----
+x=(100,12.12,True)
+print(x)
+a,b,c=x
+print(a)
+print(b)
+print(c)
+
+O/P:
+----
+(100, 12.12, True)
+100
+12.12
+True
+
+
+ex4: Tuple builtin methods
+----
+x=(10,20,30,40,50,10,40,10,60)
+print(x)
+print(20 in x)
+print(200 in x)
+#print(help(x))
+print(x.index(40))
+print(x.index(10,3))#start from 3 
+print(x.count(10))
+
+
+O/P:
+-----
+(10, 20, 30, 40, 50, 10, 40, 10, 60)
+True
+False
+3
+5
+3
+
+
+ex5: Nested Tuples:-
+----
+x=((10,20,30),[40,50,60],(70,80,90))
+print(x)
+for p in x:
+    print(p,type(p))
+x[1][1]=100
+print(x)
+
+
+O/P:
+----
+((10, 20, 30), [40, 50, 60], (70, 80, 90))
+(10, 20, 30) <class 'tuple'>
+[40, 50, 60] <class 'list'>
+(70, 80, 90) <class 'tuple'>
+((10, 20, 30), [40, 100, 60], (70, 80, 90))
+
+
+Note : Tuple comprehension technique are not suppoted 
+
+x=(p for p in range(10))
+print(x)
+
+O/P:
+----
+<generator object <genexpr> at 0x000002317FB42048>
+
+
+
+Differences b/w List & Tuple:
+-------------------------------
+		List					Tuple
+	-----------------			-------------------
+1) List Objects are mutable Objects.	1) Tuple objects are immutable Objects.
+
+2) List can't be used as a element 	2) Tuple can be used as a element of a set.
+   of the set.				   If the tuple contains only immutable
+					   elements.
+
+3) List can't be used as a key for the	3) Tuple can be used as a key for the dictonary
+   dictonary.				   if the tuple contains only immutable elements.
+
+4) Applying iterations on the List Obj	4) Applying iterations on the Tuple Objects
+   takes longer time.			   takes less time.
+
+5) If the frequent Operations are 	5) If the frequent operation is retrivel of
+   insertion/updation/deletion of the      the elements then it is recommended to use tuple.
+   elements,then it is recommended
+   in List.
+
+
+Day:
+----
+Set:
+----
+Set objects can be created by using "{}" or by calling "set()" function
+Set objects are mutable objects.
+Elements of the set must be immutable.
+Insertion order is not preserved in set().
+Duplicate elements are not allowed in set().
+set() doesn't support indexing.
+Heterogenius elements are allowed in set().
+We can perform Mathematical set() operations on set() objects
+
+ex1:
+----
+x={10}
+print(x)
+print(type(x))
+print(len(x))
+
+y=set()
+print(y)
+print(type(y))
+print(len(y))
+
+
+O/P:
+----
+{10}
+<class 'set'>
+1
+set()
+<class 'set'>
+0
+
+
+ex2:
+----
+x={10,20,30,40,50}
+print(x)
+x.add(70)
+print(x)
+
+y=x.copy()
+print(y)
+
+x.discard(400)
+print(x)
+
+x.remove(20)
+print(x)
+
+x.pop()
+print(x)
+
+
+O/P:
+----
+{40, 10, 50, 20, 30}
+{70, 40, 10, 50, 20, 30}
+{50, 20, 70, 40, 10, 30}
+{70, 40, 10, 50, 20, 30}
+{70, 40, 10, 50, 30}
+{40, 10, 50, 30}
+
+
+ex3:
+----
+A={1,2,3,4,5}
+print(A)
+B={4,5,6,7,8}
+print(B)
+
+#Union Operator
+print(A|B)
+print(B|A)
+
+print(A.union(B))
+print(B.union(A))
+
+
+#intersection
+print(A&B)
+print(B&A)
+
+print(A.intersection(B))
+print(B.intersection(A))
+
+
+#difference operator
+print(A-B)
+print(B-A)
+
+print(A.difference(B))
+print(B.difference(A))
+
+
+#symetric Operator
+print(A^B)
+print(B^A)
+
+print(A.symmetric_difference(B))
+print(B.symmetric_difference(A))
+
+
+
+O/P:
+----
+{1, 2, 3, 4, 5}
+{4, 5, 6, 7, 8}
+{1, 2, 3, 4, 5, 6, 7, 8}
+{1, 2, 3, 4, 5, 6, 7, 8}
+{1, 2, 3, 4, 5, 6, 7, 8}
+{1, 2, 3, 4, 5, 6, 7, 8}
+{4, 5}
+{4, 5}
+{4, 5}
+{4, 5}
+{1, 2, 3}
+{8, 6, 7}
+{1, 2, 3}
+{8, 6, 7}
+{1, 2, 3, 6, 7, 8}
+{1, 2, 3, 6, 7, 8}
+{1, 2, 3, 6, 7, 8}
+{1, 2, 3, 6, 7, 8}
+
+
+ex4: loops in set and how to remove non-duplicate values in set()
+----
+x={10,20,30,40,50}
+print(x)
+print(30 in x)
+
+for p in x:
+    print(p)
+
+# while will not support as set is not supporting indexing concept
+i=0
+while i<len(x):
+
+ print(x[i])
+ i=i+1
+
+
+y={100,12.12,True}
+a,b,c=y
+print(a)
+print(b)
+print(c)
+
+
+z=[10,20,30,40,30]
+print(x)
+q=set(z)
+print(q)
+
+
+O/P:
+----
+{40, 10, 50, 20, 30}
+True
+40
+10
+50
+20
+30
+True
+100
+12.12
+{40, 10, 50, 20, 30}
+{40, 10, 20, 30}
+
+
+ex5:
+----
+x={(10,20,30),(40,50,60)}
+print(x)
+
+O/P:
+----
+{(10, 20, 30), (40, 50, 60)}
+
+
+Day:
+----
+Set comphrension:
+-----------------
+The concept of generating the elements into the set object by writing some logic in the set is known as a set comphrension
+
+ex1:
+---
+x={p for p in range(10)}
+print(x)
+y={q for q in range(10,20) if q%2==0}
+print(y)
+z={r*r for r in range(20,30) if r%2!=0}
+print(z)
+
+
+O/P:
+----
+{0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+{10, 12, 14, 16, 18}
+{841, 529, 625, 729, 441}
+
+
+Dictonaries:
+------------
+Dictonary objects can be created by using {} or by calling dict() function.
+Dictonary represents the data in the form of key-value pairs.
+Each key value of a dictonary is known as a item.
+Dictonary objects are mutable objects.
+Dictonary keys must be immutable.
+The values of dictonary can be mutable or immutable.
+Heterogenious keys & values are allowed.
+Insertion order is presevred in Dictonary.
+
+
+Ex1:
+----
+x={}
+print(x)
+print(type(x))
+print(len(x))
+
+y=dict()
+print(y)
+print(type(y))
+print(len(y))
+
+z={"django":99,"flask":75,"python":60}
+print(z)
+
+p={100:"java",12.12:"hadoop",True:"python"}
+print(p)
+
+q={101:"php",102:"4+5j",103:123}
+print(q)
+
+
+O/P:
+----
+{}
+<class 'dict'>
+0
+{}
+<class 'dict'>
+0
+{'django': 99, 'flask': 75, 'python': 60}
+{100: 'java', 12.12: 'hadoop', True: 'python'}
+{101: 'php', 102: '4+5j', 103: 123}
+
+
+EX2:
+----
+x={"java":90,"python":90,"django":90}
+print(x)
+
+y={"hadoop":90,"ds":85,"hadoop":99}
+print(y)
+
+print(y["ds1"])
+print(y.get("hadoop"))
+
+y["python"]=100
+print(y)
+
+y["ds"]=99
+print(y)
+
+
+O/P:
+----
+{'java': 90, 'python': 90, 'django': 90}
+{'hadoop': 99, 'ds': 85}
+85
+99
+{'hadoop': 99, 'ds': 85, 'python': 100}
+{'hadoop': 99, 'ds': 99, 'python': 100}
+
+
+Ex3:
+----
+x={"java":97,"python":98,"django":99}
+print(x)
+
+for p in x:
+    print(p)
+
+k=x.keys()
+#print(k)
+for q in k:
+    print(q)
+
+v=x.values()
+#print(v)
+for r in v:
+    print(r)
+
+kv=x.items()
+#print(kv)
+for i in kv:
+    print(i)
+
+for a,b in x.items():
+    print(a,b)
+
+
+O/P:
+----
+{'java': 97, 'python': 98, 'django': 99}
+java
+python
+django
+java
+python
+django
+97
+98
+99
+('java', 97)
+('python', 98)
+('django', 99)
+java 97
+python 98
+django 99
+
+
+EX4:
+----
+x={(1,2,3):[10,20,30],(4,5,6):{40,50,60},"python":{"djongo":99,"java":100}}
+print(x)
+
+for k,v in x.items():
+    print(k,v)
+    
+#x={(1,2,3):(10,20,30)}
+#print(x)
+
+O/P:
+----
+{(1, 2, 3): [10, 20, 30], (4, 5, 6): {40, 50, 60}, 'python': {'djongo': 99, 'java': 100}}
+(1, 2, 3) [10, 20, 30]
+(4, 5, 6) {40, 50, 60}
+python {'djongo': 99, 'java': 100}
+
+
+EX5:
+----
+x={"java":{"struts":90,"Spring":98},"python":{"django":99,"flask":100}}
+for p,q in x.items():
+    print(p)
+    for i,j in q.items():
+        print(i,j)
+
+
+O/P:
+----
+java
+struts 90
+Spring 98
+python
+django 99
+flask 100
+
+
+Dictonary comphrension:
+---------------------
+The concept of generating the items into the dictonary by writing some logic inthe 
+dictonary is know as comphrension Dictonary.
+
+ex:
+---
+x={p:p*p for p in range(5)}
+print(x)
+
+y={q:q**2 for q in range(6,15) if q%2==0}
+print(y)
+
+z={r:r**2 for r in range(15,20) if r%2!=0}
+print(z)
+
+
+O/P:
+-----
+{0: 0, 1: 1, 2: 4, 3: 9, 4: 16}
+{6: 36, 8: 64, 10: 100, 12: 144, 14: 196}
+{15: 225, 17: 289, 19: 361}
+
+
+Assignement1:
+------------
+dict1={"abc":10,"efd":2,"ghi":4,"mno":7}
+dict2={"ghi":9,"abc":8,"mno":5,"efd":3}
+
+O/P:  Output should come in below format my counting the values of 2 ditonaries
+----
+dict={"abc":18,"efd":5,"ghi":13,"mno":12}
+
+Assignement2:
+------------
+dict1={"abc":10,"efd":2,"ghi":4,"mno":7,"xyz":20}
+dict2={"ghi":9,"abc":8,"mno":5,"efd":3}
+
+O/P:
+----
+dic={"abc":[10,8],"efd":[2,3],"ghi":[4,13],"mno":1[7,5],"xyz":[20]}
+
+
+Functions:
+----------
+Function is a syntax or structure is used to represent business logic to perform 
+the operations.
+
+Function will not be executed automatically.
+
+Function will be executed when ever we make a function call.
+We can call one function for N no.of times.
+
+syntax:
+-------
+print("begin")
+
+def myfunc():
+    print("hi")
+
+myfunc()
+myfunc()
+
+print("end")
+
+
+O/P:
+----
+begin
+hi
+hi
+end
+
+
+For every function one object is created internally & that object address is stored into the function name represented variable.
+
+The address which is present inside the function name variable can be stored into the other variables.
+
+In python we can call the function through any variable which is representing address of the object of that function.
+
+ex:
+---
+print("begin")
+
+def myfunc():
+    print("hi")
+print(myfunc)
+
+myvar=myfunc
+print(myvar)
+
+myfunc()
+myvar()
+
+print("end")
+
+
+O/P:
+----
+begin
+<function myfunc at 0x00000154C1B7F400>
+<function myfunc at 0x00000154C1B7F400>
+hi
+hi
+end
+
+
+Parameters:
+-----------
+The variables which are declared within the function declaration are known as parameters.
+
+Parameters of a function we can access within that function only.
+
+We can define 2-types of parameters to the functions in python,they are
+1) Non-default parameters
+2) Default parameters
+
+
+1) Non-default parameters:
+ -------------------------
+The parameters which are declared without asign any values are known as Non-default parameters.
+
+@ the time of calling the function compalsory we should pass the values to the Non-default parameters.
+
+ex:
+---
+def add(a,b):
+    c=a+b
+    print(c)
+add(10,20)
+add(100,200)
+
+
+O/P:
+----
+30
+300
+
+Day:
+----
+Default Parameters:
+-------------------
+The parameters which sre declared by assigning some value are known as default parameters.
+
+@ the time of calling the function we need not to pass the values to the default parameters.
+
+
+ex:
+---
+def add(a=10,b=20):
+    c=a+b
+    print(c)
+
+add()
+add(100)
+add(123,456)
+
+
+O/P:
+----
+30
+120
+579
+
+ex2:
+----
+def add(a,b=20):
+    c=a+b
+    print(c)
+
+#add()
+add(100)
+add(123,456)
+
+
+O/P:
+----
+120
+579
+
+
+After defining the default parameter we not allowed to define non-default parameter.
+
+ex:
+---
+def add(a=10,b):
+    c=a+b
+    print(c)
+
+add(100)
+add(123,456)
+
+
+O/P:
+----
+non-default argument follows default argument
+
+Arbitary Parameters:
+-------------------
+Any parameter which is preceded by the "*" is known as arbitary parameter
+Arbitary parameter type is taken as a tuple.
+@ the time of calling the function we can pass 0 or more values to the arbitary patrameters.
+
+
+ex1:
+----
+def add(*a):
+    print(a)
+    print(type(a))
+    print(len(a))
+
+add()
+add(1000)
+add(10,20,30)
+
+
+O/P:
+-----
+()
+<class 'tuple'>
+0
+(1000,)
+<class 'tuple'>
+1
+(10, 20, 30)
+<class 'tuple'>
+3
+
+
+
+ex2:
+----
+def add(a,*b):
+    print(a)
+    print(b)
+
+
+add(1000)
+print(100,200)
+add(10,20,30)
+
+
+O/P:
+----
+1000
+()
+100 200
+10
+(20, 30)
+
+
+ex3:
+----
+def add(*a,b):
+    print(a)
+    print(b)
+
+
+add(1000)
+print(100,200)
+add(10,20,30)
+
+
+O/P:  error msg
+----
+Traceback (most recent call last):
+  File "C:\Users\Ravi Kanth\Desktop\sample.py", line 6, in <module>
+    add(1000)
+TypeError: add() missing 1 required keyword-only argument: 'b'
+
+
+
+Arguments:-
+----------
+The values which we are passing to the parameneters of the function @ the time of calling the function are known as arguments.
+
+We can pass 2-types of arguments to the functions .They are 
+    1) Non-keyword arguments
+    2) keyword arguments
+
+1) Non-keyword arguments:
+-------------------------
+The arguments which are passing directly without assigning the a prameter name are known as Non-keyword arguments.
+
+Non-keyword arguments are working based on position.
+
+ex:
+---
+def greet(name,msg):
+    print("Hello",name,msg)
+    
+greet("ravi","gud morning")
+greet("gud evening","ravi")
+
+O/P:
+----
+Hello ravi gud morning
+Hello gud evening ravi
+
+
+2) keyword arguments:
+---------------------
+The arguments which we are passing by assigning the paramenter names are known as keyword
+arguments.
+
+ex:
+---
+def greet(name,msg):
+    print("Hello",name,msg)
+    
+greet("ravi",msg="gud morning")
+greet(msg="gud evening",name="ravi")
+
+
+O/P:
+-----
+Hello ravi gud morning
+Hello ravi gud evening
+
+
+ex1:
+----
+def greet(name,msg):
+    print("Hello",name,msg)
+    
+greet("ravi",msg="gud morning")
+
+O/P:
+----
+Hello ravi gud morning
+
+ex2:
+---
+After passing keyword arguments we are not allowed to pass non-keyword arguments
+
+def greet(name,msg):
+    print("Hello",name,msg)
+    
+greet(name"ravi","gud morning")
+
+
+
+O/P:
+----
+Invalid syntax
+
+
+ex:
+---
+def myfunc(*a,b):
+    print(a)
+    print(b)
+
+myfunc(10,20,30,b=40)
+
+
+O/P:
+----
+(10, 20, 30)
+40
+
+
+ex:
+---
+#help(list)
+x=[10,40,20,30]
+print(x)
+x.sort(reverse=True)
+print(x)
+
+
+O/P:
+----
+[10, 40, 20, 30]
+[40, 30, 20, 10]
+
+
+Day:
+----
+Return Statement:
+-----------------
+Return Statement is used to return the data.
+
+When ever control reached to the return statement of the function ,then function execution is terminated by returning some value.
+
+The return value of a function we can store into a variable & we can used that variable in the rest of the program.
+
+We can define N no.of return statements in a function.
+
+Even though we define N no.of return statements in a function .@ a time only one return statement will be executed.
+
+If we are not storing return vales of a function into any variable.Then the value will become as a garbage collector.
+
+
+ex1:
+----
+def add(a,b):
+    c=a+b
+    return c
+x=add(100,200)
+print(x)
+
+
+O/P:
+----
+300
+
+
+ex2:
+----
+def add(a,b):
+    print("begin")
+    c=a+b
+    if c>=0:
+        return c
+    print("end")
+    return None
+x=add(100,-200)
+print(x)
+
+
+O/P:
+----
+begin
+end
+None
+
+
+
+Note:
+-----
+If the control is not reached to the any one of the user defined return statement of a function then by default that function returns the default value called "None".
+
+ex3:
+----
+def add(a,b):
+    print("begin")
+    c=a+b
+    if c>=0:
+        return c
+    print("end")
+x=add(100,-200)
+print(x)
+
+
+O/P:
+----
+begin
+end
+None
+
+
+Default return is placed @ end of the function body.
+
+ex4:
+----
+def absolute(a):
+    if a<0:
+        return -a
+    else:
+        return a
+    print("end")
+ 
+
+x=absolute(10)
+print(x)
+
+y=absolute(-25)
+print(y)
+
+
+O/P:
+----
+10
+25
+
+
+ex5:
+----
+def myfunc(a):
+    i=0
+    s=0
+    while i<=a:
+       s=s+i
+       if i==100:
+           return s
+       i=i+1
+    return s
+x=myfunc(100000)
+print(x)
+
+
+O/P:
+----
+5050
+
+
+Variable Types:
+---------------
+1) Global variable
+2) Local Variable
+
+
+1) Global variable:
+-------------------
+The variables which are declared outside of all the functions are known as Global variables.
+
+For all the global variables of a program memory will be allocated only once.
+Global variables of one prgm can be accessed in all the functions of same prgm directly.
+
+
+2) Local Variable:
+------------------
+The variables which are declare within the function body are known as Local Variables.
+For local variables of a function memory will be allocated when ever we make a function call.
+Local variables of one function cann't accessed from outside  of that function.
+
+
+ex:
+---
+a=1000
+def f1():
+    print(a)
+    b=2000
+    print(b)
+def f2():
+    print(a)
+    c=3000
+    print(c)
+    print(b)
+
+f1()
+f2()
+
+
+O/P:
+----
+1000
+2000
+1000
+3000
+Traceback (most recent call last):
+  File "C:\Users\Ravi Kanth\Desktop\sample.py", line 13, in <module>
+    f2()
+  File "C:\Users\Ravi Kanth\Desktop\sample.py", line 10, in f2
+    print(b)
+NameError: name 'b' is not defined
+
+
+Day:
+----
+
+ex:
+---
+a=1000
+def m1():
+    global a
+    a=2000
+    print(a)
+def m2():
+    print(a)
+
+m1()
+m2()
+
+
+O/P:
+----
+2000
+2000
+
+
+Recursive function invocation:
+------------------------------
+A function which is called by itself is known as a recursive function invocation.
+Python supports recursive invocation,but infinite recursion leads to run time error.
+
+ex1:
+----
+i=1
+def myfunc():
+    global i
+    print("welcome")
+    while i<=5:
+        i=i+1
+        myfunc()
+myfunc()
+
+
+O/P:
+----
+welcome
+welcome
+welcome
+welcome
+welcome
+welcome
+
+
+ex:2
+----
+def recur_fact(x):
+    if x == 1:
+        return 1
+    else:
+        return (x * recur_fact(x-1) )
+num = int(input("Enter the Number :"))
+if num >= 1:
+    print("The factorial of", num, "is", recur_fact(num))
+
+
+O/P:
+----
+Enter the Number :5
+The factorial of 5 is 120
+
+Lambda/Anonymous functions:
+---------------------------
+A function which doesn't contain any name explicitly is known as a lambda function or anonymous function.
+
+Lambda function we can define in following syntax...
+
+syntax:
+-------
+lambda arguments : expression
+
+We can assign the lambda function to a variable &n we can call that function through that variable.
+
+ex1:
+----
+myfunc=lambda x:x*x
+p=myfunc(10)
+print(p)
+
+
+O/P:
+----
+100
+
+
+ex2:
+----
+def cube(a,func):
+    c=func(a)
+    return a*c
+
+def square(b):
+    return b*b
+
+p=cube(10,square)
+print(p)
+
+O/P:
+----
+1000
+
+
+Note: When ever we want to pass one function as a parameter to another functionthen it is recommended to pass lambda function as parameter.
+
+ex3:
+----
+def cube(a,func):
+    c=func(a)
+    return a*c
+
+p=cube(10,lambda b:b*b)
+print(p)
+
+
+O/P:
+----
+1000
+
+
+Day:
+----
+
+ex:
+---
+my_list=[1,5,4,6,8,11,3,12]
+
+new_list=list(filter(lambda x:(x%2==0),my_list))
+print(new_list)
+
+
+O/P:
+----
+[4, 6, 8, 12]
+
+
+ex2:
+----
+my_list=[1,5,4,6,8,11,3,12]
+
+new_list=list(map(lambda x:(x%2==0),my_list))
+print(new_list)
+
+
+O/P:
+----
+[False, False, True, True, True, False, False, True]
+
+
+ex3:
+----
+my_list=[1,5,4,6,8,11,3,12]
+
+new_list=list(map(lambda x:(x*x),my_list))
+print(new_list)
+
+
+O/P:
+----
+[1, 25, 16, 36, 64, 121, 9, 144]
+
+
+File Handling:-
+--------------
+File is a named location on the disk(HDD),which stores the data perminently.
+
+Python program can open the file,perform the operations on the file,and close the file.
+
+File can be opened by calling pre-defined function called "open".
+
+@ the time of opening the file we have to specify the mode of the file.
+
+Mode of the file indicates types of the operations whicha re going to be performed on the file, and what type of data is going to store into file & get data from the file.
+
+Character 	   Meaning 
+---------	--------------
+  'r' 	    open for reading (default) 
+  'w' 	    open for writing, truncating the file first 
+  'x' 	    open for exclusive creation, failing if the file already exists 
+  'a' 	    open for writing, appending to the end of the file if it exists 
+  'b' 	    binary mode 
+  't' 	    text mode (default) 
+  '+' 	    open a disk file for updating (reading and writing) 
+
+Note:-
+After executing the open function it returns specified file object.
+
+File Object contains various methods,and by using those methods we can perform the 
+operations on the files and we can close the file.
+
+ex:
+---
+x=open("bootstraps.txt")
+print(x.read())
+x.close()
+
+
+O/P:
+----
+as
+sd
+df
+
+
+ex:
+---
+x=open("bootstraps.txt")
+print(x.tell())
+#x.seek(2)
+#print(x.tell())
+print(x.read())
+print(x.tell())
+x.close()
+
+O/P:
+-----
+0
+2
+tp://formvalidation.io/examples/bootstrap-multiselect/
+https://mdbootstrap.com/javascript/bootstrap-multiselect/
+https://www.jquery-az.com/boots/demo.php?ex=63.0_1
+173
+
+
+Day:
+----
+
+ex1:
+----
+x=open("sourcetree.txt")
+#print(x.read())
+lines=x.readlines()
+for p in lines:
+    print(p,end="")
+x.close()
+
+
+O/P:
+----
+source tree(server) &  VSTS(client) -- free
+visual studio team services -- paid
+GitHub -- free
+GitBucket -- paid
+
+
+ex2: Writing the data into the file
+----
+x=open("abc.txt","w")
+x.write("python  \n ravilella \n")
+x.close()
+
+O/P:
+----
+data will write into the given file.
+
+
+ex3: Appending the data to the existing file
+----
+x=open("abc.txt","a")
+x.write("python  \n ravilella \n")
+x.close()
+while True:
+     print("Done!")
+     break
+
+
+O/P:
+----
+data will append into the given file.
+
+
+Pickling:
+---------
+The concept of storing the python object into the file in the form of file supported format is known as a pickling or serialization.
+
+UnPickling:
+-----------
+The concept of getting python object from the file is known as unpickling or deserialization.
+
+In order to perform pickling & unpickling operations we use the some pre-defined functions of pickle module.
+
+import pickle
+data=[["scott",7369,800],["allen",7499,1600],["blake",7839,2450]]
+x=open('picfile.txt','wb')
+pickle.dump(data,x)
+x.close()
+
+
+import pickle
+x=open('picfile.txt','rb')
+data=pickle.load(x)
+x.close()
+print(data)
+
+
+Exception Handling:-
+-------------------
+Generally we get 2-types of errors in any programing languages. They are 
+1) syntax errors
+2) RunTime erors
+
+1) syntax errors:
+-----------------
+The errors which occures because of invalid syntax's are known as syntax errors.
+When ever we run a python file if any syntax error is occured,then .pyc file will not generated for that python file.
+
+Without getting the .pyc file prgm execution will not be started.
+
+
+ex:
+---
+print("Begin")
+def f1():
+print("in f1")
+print("End")
+
+723282
+O/P:
+----
+expected an indentation block
+
+Note: Prgm or developer should have to provide the solutions for the syntax errors.
+
+
+
+RunTime errors:
+---------------
+The errors which occurs after starting the execution of prgms are known as Runtime errors.
+
+wrt every runtime error corresponding runtime error representive classes is availabke in python.
+
+Runtime error representing classes technically we called as a exception classes.
+
+In each and every predefined module of python exception classes are available.
+
+@ the time of exection of the prgm if any runtime error is occured the corresponding runtime error representation class object is created.
+
+
+Creating exception class object is technicaly known as a raising exception.
+
+After raising the exception python interpritter verifies any code implemented to handled the raised exception.
+
+If the code is not implementd to handle the raised exception then prgm will be terminated abnormally.
+
+
+Abnormal Termination:
+---------------------
+The concept of terminating the prgm in middle of its execution without execting last stmt of the prgm is known as a abnormal termination.
+
+ex1:
+----
+print("begin")
+
+i=input("Enter fno :")
+x=int(i)
+
+j=input("Enter lno :")
+y=int(j)
+
+print(x/y)
+
+print("End")
+
+
+O/P:
+----
+begin
+Enter fno :100
+Enter lno :0
+Traceback (most recent call last):
+  File "C:\Users\Ravi Kanth\Desktop\sample.py", line 9, in <module>
+    print(x/y)
+ZeroDivisionError: division by zero
+
+
+
+Exception Handling :-
+------------------
+The concept of identifying the raised exception,recieving that exception 
+and assigning that exception to the corresponding exception class is known as a Exception handling.
+
+Exception handling can be implemented in python by using "try" & "except" blocks.
+
+1) try block:
+-------------
+A block which is preceeded by try keyword is known as try block.
+
+syntax:
+-------
+
+try:
+  ------
+  ------
+  ------
+
+The stmts which causes runtime errors and the other stmts which depends on the execution of the runtime occur stmt are recommended to representing try block.
+
+@ time of execution of the try block stmts if any exception is raised then immidiatly that exection is idenfied by try block, recieved by try block & forword that object t the except block without executing remaining stmts of try block.
+
+2) Except Block:
+----------------
+A block which is preceded by the except keyword is known as a except Block
+
+syntax:
+-------
+except(Exceptionclassname):
+   ------
+   ------
+   ------
+
+Except block recieves the exception which is given by the try block and assign that exception to the corresponding exception class.
+
+within the except block we can aslo define the stmts display the user friendly error messages.
+
+
+ex1:
+----
+print("begin")
+
+i=input("Enter fno :")
+x=int(i)
+
+j=input("Enter lno :")
+y=int(j)
+
+try:
+    print(x/y)
+except(ZeroDivisionError):
+    print("fno should be greater than zero")
+    
+print("End")
+
+
+
+O/P:
+----
+begin
+Enter fno :100
+Enter lno :0
+fno should be greater than zero
+End
+
+
+ex2:
+----
+print("begin")
+
+while True:
+    i=input("Enter fno :")
+    x=int(i)
+
+    j=input("Enter lno :")
+    y=int(j)
+    try:
+        print(x/y)
+        break
+    except(ZeroDivisionError):
+        print("fno should be greater than zero")
+    
+print("End")
+
+
+O/P:
+----
+begin
+Enter fno :100
+Enter lno :0
+fno should be greater than zero
+Enter fno :100
+Enter lno :10
+10.0
+End
+
+ex3:
+----
+print("begin")
+
+while True:
+    i=input("Enter fno :")
+    j=input("Enter lno :")
+    
+    try:
+        x=int(i)
+        y=int(j)
+        print(x/y)
+        break
+    except(ZeroDivisionError):
+        print("fno should be greater than zero")
+    except(ValueError):
+        print("Please enter numarical values only")
+    
+print("End")
+
+
+O/P:
+----
+begin
+Enter fno :100
+Enter lno :wew
+Please enter numarical values only
+Enter fno :100
+Enter lno :0
+fno should be greater than zero
+Enter fno :100
+Enter lno :10
+10.0
+End
+Default except block:
+---------------------
+Default except block is a except block which can handle any type of exception
+
+
+ex4: 
+----
+print("begin")
+
+while True:
+    i=input("Enter fno :")
+    j=input("Enter lno :")
+    
+    try:
+        x=int(i)
+        y=int(j)
+        print(x/y)
+        
+    except:
+        print("error occured")
+    
+print("End")
+	
+
+
+O/P:
+----
+begin
+Enter fno :100
+Enter lno :0
+error occured
+Enter fno :100
+Enter lno :ww
+error occured
+Enter fno :100
+Enter lno :10
+10.0
+End
+
+
+Single try with multiple exception Blocks:  
+-----------------------------------------
+When ever we try define with single try with multiple except blocks if any execption is raised in try block the control will go to the first except block.
+If first except block is not handling that exception then only the control will goto the next except block.
+To display seperate user friendly error msgs wrt every exception we use single try with multiple except blocks.
+
+ex:
+---
+print("begin")
+
+while True:
+    i=input("Enter fno :")
+    j=input("Enter lno :")
+    
+    try:
+        x=int(i)
+        y=int(j)
+        print(x/y)
+        break
+    except:
+        print("error ocured")
+    except(ZeroDivisionError):
+        print("Number should be greater than zero")
+    except(ValueError):
+        print("Enter Numerical value only")
+  
+    
+print("End")
+
+
+O/P:
+----
+begin
+Enter fno :100
+Enter lno :10.3
+Enter Numerical value only
+Enter fno :100
+Enter lno :qwqw
+Enter Numerical value only
+Enter fno :100
+Enter lno :0
+Number should be greater than zero
+Enter fno :100
+Enter lno :10
+10.0
+End
+
+
+Note: @ the time of defining single try with multiple except blocks default except       block must be the last except block ,otherwise we wil get syntax error.
+
+
+
+Raise:
+------
+Raise is a keyword,which is used to raise exception explicitly 
+
+ex:
+---
+print("begin")
+
+while True:
+    i=input("Enter fno :")
+    j=input("Enter lno :")
+    
+    try:
+        x=int(i)
+        y=int(j)
+        z=x/y
+        raise TypeError
+        print(z)
+        break
+    
+    except(ZeroDivisionError):
+        print("Number should be greater than zero")
+    except(ValueError):
+        print("Enter Numerical value only")
+    except:
+        print("error ocured")
+    
+print("End")
+
+
+O/P:
+----
+begin
+Enter fno :100
+Enter lno :10
+error ocured
+
+
+
+
+Finally Block:
+--------------
+Any Block which is preceded by the finally keyword is known as  a finally block.
+
+syntax:
+-------
+finally:
+   ------
+   ------
+   ------
+
+The set of stmts which are complasory to execute either  exception is rasied or not raised even though exception is raised  whether it is handled or not handled are recommended to represent in finally block.
+
+Resource releasing statements (file closing stmts, database connection closing stmts) are recommended to represent in finally block.
+
+finally block is preceded by either try block or except block.
+
+syntax1:
+--------
+try:
+  -----
+  -----
+  -----
+finally:
+  -----
+  -----
+  -----
+
+
+syntax2:
+--------
+try:
+  -----
+  -----
+  -----
+except:
+  -----
+  -----
+  -----
+
+finally:
+  -----
+  -----
+  -----
+
+ex:
+---
+print("begin")
+
+while True:
+    i=input("Enter fno :")
+    j=input("Enter lno :")
+    
+    try:
+        x=int(i)
+        y=int(j)
+        z=x/y
+        print(z)
+        break
+    
+    except(ZeroDivisionError):
+        print("Number should be greater than zero")
+
+    finally:
+        print("in finally")
+print("End")
+
+
+O/P:
+----
+begin
+Enter fno :100
+Enter lno :0
+Number should be greater than zero
+in finally
+
+
+Nested Try Blocks:
+------------------
+We can define one try block inside another try block.
+
+A try block which contains another try block is known as a outer try block or enclosing try block.
+
+A try block which is defined inside another try block is known as a inner try block or nested try block.
+
+syntax:
+-------
+try:
+  -----
+  -----
+  -----
+	try:
+  	 -----
+ 	 -----
+ 	 -----
+	except:
+ 	 -----
+  	-----
+  	-----
+
+except:
+  -----
+  -----
+  -----
+
+Note: If exception is raised in outer try block,then control will go the outer try       except block.
+
+      If outer try except block is not handling the exception then prgm will be               terminated abnormally.
+
+      If the exception is raised in inner try block,then control will goto the inner          try except block.
+
+      If the inner try is not handling that exception then control will goto the outer       try except block.
+
+     
+ex:
+---
+try:
+    print("in try")
+    try:
+        print("in try1")
+    except:
+        print("in except1")
+    finally:
+        print("in finally1")
+except:
+    print("in except")
+    try:
+        print("in try2")
+    except:
+        print("in except2")
+    finally:
+        print("in finally2")
+finally:
+    print("in finally")
+    try:
+        print("in try3")
+    except:
+        print("in except3")
+    finally:
+        print("in finally3")
+
+
+O/P:
+----
+in try
+in try1
+in finally1
+in finally
+in try3
+in finally3
+
+Userdefined Exceptions:
+-----------------------
+Userdefined exceptions can be implemented in 3 steps.They are.
+
+1) Defining userdefine exception class
+2) Raise the userdefine exception class
+3) Handle the raised exception
+
+1) Defining userdefine exception class:
+---------------------------------------
+Any userdefined class which is extending anyone of the predefined exception class is known as a userdefine exception class.
+
+
+2) Raise the userdefine exception class:
+-----------------------------------------
+Userdefined exceptions are not raised automatically,so that we have to rasie the userdefine exceptions explictly by using rasie keyword.
+
+
+3) Handle the raised exception:
+-------------------------------
+We can handle the raised exception by using try & except blocks.
+
+
+ex:
+---
+
+class ValueTooSmallError(Exception):
+    pass
+
+class ValueTooLargeError(Exception):
+    pass
+
+number = 10
+while True:
+    try:
+        i_num = int(input("Enter the Number : ")) 
+        if i_num < number:
+            raise ValueTooSmallError
+        elif i_num > number:
+            raise ValueTooLargeError
+        break
+    except(ValueTooSmallError):
+        print("The value is too small,try again")
+    except(ValueTooLargeError):
+        print("The value is to large,try again")
+print("Congratulations ! us gussed correctly")
+
+
+O/P:
+----
+Enter the Number : 4
+The value is too small,try again
+Enter the Number : 11
+The value is to large,try again
+Enter the Number : 10
+Congratulations ! us gussed correctly
+
+
+
+
+Modules:
+--------
+
+Reloading the module:
+even though we import a module for more than once & by default that module is imported only once.
+
+Inorder to reload the already loaded module we use reload function of "imp" module.
+
+"imp" module is a pre-defined module.
+
+ex1:t
+----
+sample.py
+---------
+print("begin")
+a=1000
+def f1():
+    print("in f1")
+ 
+test.py
+-------
+import sample
+import imp
+b=2000
+def f2():
+    print("in f2")
+print(sample.a)
+sample.f1()
+print(b)
+f2()
+imp.reload(sample)
+
+
+O/P:
+----
+begin
+1000
+in f1
+2000
+in f2
+begin
+
+
+
+Built-ins:
+---------
+Built-ins is a pre-defined module, which contains frequently used pre-defined functions & classes.
+
+Even though we don't import builtin modules explicitly.builtin module is automatically imported in each & every python file.
+
+Modules Search path:
+--------------------
+Python interpretter search for the imported modules in the following locations.
+
+1) Current working directory (main module location)
+2) Environment variable path
+3) Installation dependent directory of python.
+
+If the imported module is not available in the above locations then python interpritter gives error.
+
+
+Packages:
+---------
+Package is nothing but a folder or directory,which represents collection of python modules.
+
+A package can also contain sub-packages.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

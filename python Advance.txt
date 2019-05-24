@@ -1,0 +1,2669 @@
+OOPs Principles:
+-----------------
+These are nothing but certain rules & guidelines
+Different oops principles are
+
+1) Encapsulation
+2) Inheritance
+3) Polymorphism
+4) Abstraction
+
+If we implement the business applications in any prg language according to oops principles.
+Then we will get following benfits in those applications.
+
+1) Security
+2) Flexibility
+3) Reusability
+
+Object Oriented Programing Languages:
+------------------------------------
+
+A program language which provides special syntax to implement the applications in those languages according to oops principles are known as Object OrientedPrograming Languages.
+
+ex: c++, java, .net, python, etc ......
+
+			    	
+			   |Data:
+			   |----> cno,cname,cadd,cacount,cbal
+	|--------> customer
+	|		   |Operations:
+	|		   |----> deposit,witdrawl,balenq,transfer
+Bank----
+	|                   
+	|		   |Data:
+	|		   |-----> eid,ename,eadd 
+	|---------> Employee
+			   |Operations:
+			   |-----> HRA,tax,PF,takehome
+
+
+D2: 
+-----
+
+If we implement the organization usecases in python language according to the procedure orientation machanisem then security will miss for the global variables.
+
+ex:
+---
+cname=None   #None is a default value for all the variables in ptyhon
+cadd=None    
+cacno=None
+cbal=None
+eid=None
+ename=None
+eadd=None
+esal=None
+
+
+def deposit():  # def is keyword which represents as a method
+    print("deposit")
+    
+def withdraw():
+    print("withdraw")
+
+def transfer():
+    print("transfer")
+
+def balenq():
+    print("balenq")
+    
+def hra():
+    print("hra")
+
+def tax():
+    print("tax")
+
+def pf():
+    print("pf")
+
+def takehome():
+    print("takehome")
+
+
+1) Encapsulation :
+------------------
+The concept of binding  related data members & along with related functionalities is known as a encapsulation.
+
+ex: 
+---
+
+customer Data & operations
+--------------------------
+cname=None   #None is a default value for all the variables in ptyhon
+cadd=None
+cacno=None
+cbal=None
+
+def deposit():
+    print("deposit")
+    
+def withdraw():
+
+    print("withdraw")
+
+def transfer():
+    print("transfer")
+def balenq():
+    print("balenq")
+
+
+
+employee data & operations
+--------------------------
+eid=None
+ename=None
+eadd=None
+esal=None
+
+def hra():
+    print("hra")
+
+def tax():
+    print("tax")
+
+def pf():
+    print("pf")
+
+def takehome():
+    print("takehome")
+
+
+
+Class:
+------
+Class is a syntax or structure is used to group related data members along with related
+functionalities.
+
+syntax:
+-------
+class className()
+   """doc str"""
+   -------------
+   -------------
+   -------------
+
+Documentation String:
+---------------------
+Documentation String of a class is used to provide the information about the class.
+Within the class syntax Documentation String is optional.But it is highly recomended.
+
+ex:
+---
+class Test:
+    """Sample class to test doc str"""
+help(Test)
+help(str)
+    
+Within the class we can represent the data by using the variables.
+We can declare 3-types of variables within the class.They are
+1) static variables
+2) non-static variables
+3) local variables
+
+Within the class we can represent the operations by using methods.
+We can define 3-types of methods within the class.They are
+1) static methods
+2) non-static methods
+3) class methods
+
+
+The concept of allocating memory space for non-static variables of a class @ runtime dynamically is known as a object (or) instance of a class is known as a object.
+
+syntax: referenceVariable = classname() --> it is Object creation statement
+
+after creating the object python interpreter takes the original address of the object creates indirect address based on the original address ,and gives the indirect address to the variable.The variable which is storing the indirect address of the object is known as reference variable.
+
+Through the reference variable we can put the data into the object, we can get the
+data from the object & we can call the methods on the object.
+
+The indirect address which is created by the python interpreter based on the original address of the object contains 2 parts.
+
+1) Class Name
+2) HexaDecemial representation of hash code
+
+We can create N-no.of  Objects for a class.
+2-differet objects of same class or 2-differet objects of different classes does not contain same address.
+
+ex: 
+---
+class Test:
+    """Sample class to test doc str"""
+    def display(self):
+        print("welcome")
+t1=Test()
+print(t1)
+t1.display()
+t2=Test()
+print(t2)
+t2.display()
+
+
+O/P:
+----
+<__main__.Test object at 0x000001D7BC5939E8>
+welcome
+
+<__main__.Test object at 0x000001D7BC585E80>
+welcome
+
+
+Static Variables:
+-----------------
+.Variables which are declared within the class outside of all the methods are known as static variables.
+
+The data which is commom for all the objects.Is recommended to represent by using
+static variables.
+
+For all the static varaibles of a class memory will be allocated only once.
+
+Static variables of one class we can access within the same class & outside of the class by using className.
+
+
+ex1:
+----
+class X:
+    a=1000
+    b=2000
+    def m1(self):
+        print(X.a)
+        print(X.b)
+   
+obj=X()
+obj.m1()
+print(X.a)
+print(X.b)
+print(obj.a)
+print(obj.b)
+
+
+O/P:
+-----
+1000
+2000
+1000
+2000
+1000
+2000
+
+
+
+ex2:
+-----
+class X:
+    a=1000
+    b=2000
+    def display(self):
+        print(X.a)
+        print(X.b)
+    def modify(self):
+        X.a=X.a+100
+        X.b=X.b-100
+      
+        
+obj=X()
+obj.display()
+obj.modify()
+obj.display()	
+
+obj2=X()
+obj2.display()
+obj2.modify()
+obj2.display()
+
+like 
+obj3=X()
+obj3.display()
+O/P:
+----
+1000
+2000
+1100
+1900
+1100
+1900
+1200
+1800
+
+
+Non Static variables:
+---------------------
+The variables which are declared within the class by using self: are known as non static variables.
+
+The data which is seprate for every object is recommended by using non static variables.
+
+For all the non static varaibles of a class memory will be allocated within the object.
+
+Non static variables of one class we can access within the same class by using self:
+
+Non static variables of one class we can access from outside of the class by using
+reference variable.
+
+ex1:
+----
+class X:
+    def insert(self):
+        self.a = 1000
+        self.b = 2000
+    
+    def display(self):
+        print(self.a)
+        print(self.b)
+      
+        
+obj=X()
+obj.insert()
+obj.display()
+obj1=X()
+obj1.insert()
+obj1.display()
+
+
+
+O/P:
+----
+1000
+2000
+1000
+2000
+
+ex2:
+----
+class X:
+    def insert(self):
+        self.a = 1000
+        self.b = 2000
+    
+    def display(self):
+        print(self.a)
+        print(self.b)
+
+    def modify(self):
+        self.a=self.a+100
+        self.b=self.b-100
+      
+        
+obj=X()
+obj.insert()
+obj.display()
+obj.modify()
+obj.display()
+
+obj1=X()
+obj1.insert()
+obj1.display()
+  
+ex3:
+---
+class X:
+    def insert(self):
+        self.a = 1000
+        self.b = 2000
+    
+    def display(self):
+        print(self.a)
+        print(self.b)
+
+    def modify(self):
+        self.a=self.a+100
+        self.b=self.b-100
+      
+        
+obj=X()
+obj.display() 
+
+
+Constructors:
+--------------
+Constructor is a special method ,which is used to define & initialize non-static variables of a class @ the time of creating the object.
+
+Diferences b/w method & Constructors:
+--------------------------------------
+Methods:
+--------
+1) Method name can be any name.
+2) Method will be executed when ever we make a method call.
+3) wrt one object one method can called for N no of times.
+4) methods are used to represent the business logics to perform the operations.
+
+
+Constructors:
+-------------
+1) Constructor name must be __init__
+2) Constructor will be executed automatically when ever we create object.
+3) wrt one object one constructor will be executed only once.
+4) Constructors are used  to defined & initialized non static variables of a class@ the time of creation of the object.
+
+ex1:
+----
+class Test:
+    def __init__(self):
+        print("in constructor of Test")
+    def display(self):
+        print("welcome to display")
+t1=Test()
+t1.display()
+t1.display()
+
+t2=Test()
+t2.display()
+t2.display()
+
+O/P:
+----
+in constructor of Test
+welcome to display
+welcome to display
+in constructor of Test
+welcome to display
+welcome to display
+
+
+ex2: Default constructor call
+----
+class Test:
+    def __init__(self):
+        self.a=1000
+        self.b=2000
+        print("in constructor of Test")
+    def display(self):
+        print(self.a)
+        print(self.b)
+t1=Test()
+t1.display()
+
+t2=Test()
+t2.display()
+
+
+O/P:
+----
+in constructor of Test
+1000
+2000
+in constructor of Test
+1000
+2000
+
+
+ex3: parameterize constructor call
+----
+class Test:
+    def __init__(self,x,y):
+        self.a=x
+        self.b=y
+        print("in constructor of Test")
+    def display(self):
+        print(self.a)
+        print(self.b)
+t1=Test(100,200)
+t1.display()
+
+t2=Test(1000,2000)
+t2.display()
+
+
+O/P:
+----
+in constructor of Test
+100
+200
+in constructor of Test
+1000
+2000
+
+
+3) Local Variables:
+-------------------
+The variables which are declared within the method body are known as Local variables.
+
+The data which is required to use within a particular method is recommended to
+represent by using local variables.
+
+For all the local variables of a method memory will be allocated when ever we make
+a method call.
+
+Local variables of one method can't be accessed from outside of that method.
+
+ex:
+---
+class Test:
+    def m1(self):
+        a=1000
+        b=2000
+        print(a)
+        print(b)
+    def m2(self):
+        c=3000
+        d=4000
+        print(c)
+        print(d)
+        #print(a)
+        #print(b)
+t1=Test()
+t1.m1()
+t1.m2()
+    
+
+
+O/P:
+----
+1000
+2000
+3000
+4000
+
+
+ex2:
+----
+class Cust:
+    """Cust app"""
+    cbname="sbi"
+    def __init__(self,cname,cadd,cacno,cbal):
+        self.cname=cname
+        self.cadd=cadd
+        self.cacno=cacno
+        self.cbal=cbal
+    def deposit(self,damt):
+        self.cbal=self.cbal+damt
+    def withdraw(self,wamt):
+        self.cbal=self.cbal-wamt
+    def display(self):
+        print(self.cname)
+        print(self.cadd)
+        print(self.cacno)
+        print(self.cbal)
+        print(Cust.cbname)
+
+c1=Cust("ravilella","california",1000,100000.00)
+c1.deposit(20000.00)
+c1.withdraw(40000.00)
+c1.display()
+
+
+c2=Cust("ravikanth","india",2000,200000.00)
+c2.deposit(30000.00)
+c2.withdraw(50000.00)
+c2.display()
+
+        
+O/P:
+----
+ravilella
+california
+1000
+80000.0
+sbi
+
+ravikanth
+india
+2000
+180000.0
+sbi
+
+
+class InsufficientFunds(Exception):
+    pass
+class Cust:
+    """ cust app"""
+    cbank="sbi"
+    def __init__(self,cname,cadd,cacno,cbal):
+        self.cname=cname
+        self.cadd=cadd
+        self.cacno=cacno
+        self.cbal=cbal
+    def deposit(self,damt):
+        self.cbal=self.cbal+damt
+    def withdraw(self,wamt):
+        if wamt>self.cbal:
+            raise InsufficientFunds
+        self.cbal=self.cbal-wamt
+    def display(self):
+        print(self.cname)
+        print(self.cadd)
+        print(self.cacno)
+        print(self.cbal)
+        print(self.cbank)
+
+c1=Cust("ram","hyd",1001,100000)
+print(c1)
+c1.deposit(50000)
+c1.withdraw(70000)
+c1.display()
+c2=Cust("raj","pune",1002,20000)
+print(c2)
+c2.deposit(50000)
+try:
+    c2.withdraw(14000000)
+except(InsufficientFunds):
+    print("insufficint funds in your account")
+c2.display()
+
+Garbage Collection:
+-------------------
+The concept of removing unused objects from memory location is known as Garbage Collection.
+
+If reference count of any object becomes zero,then we called that object as a unused object.
+
+The no.of reference variables which are pointing a object is known as a reference count of the object.
+
+@ the time execution of the program,if any object reference count becomes zero.Then python interpretter calls the garbage collector.
+
+Garbage collector is s predefined prgm or background thread,which removes unused objects from the memory location.
+
+After executing the garbage collector prgm more memory space available space is available to the prgm.And rest of the prgm execution becomes faster.
+
+ex:
+----
+class X:
+    def m1(self):
+        print("in m1 of x")
+        
+x1=X()
+x1.m1()
+print(x1)
+
+x1=X()
+x1.m1()
+print(x1)
+
+
+O/P:
+-----
+in m1 of x
+<__main__.X object at 0x000001C256C63A58>
+in m1 of x
+<__main__.X object at 0x000001C256C55EF0>
+
+
+Day:
+---
+Destructor:
+-----------
+Destructor is a special method and name of the Destructor must be "__del__".
+
+Destructor of a class will be executed automatically when ever object is created from memory location.
+
+It is recomended to represent resource releasing stmts or resourse ralocation stmts. 
+
+ex:
+---
+class X:
+   def __init__(self):
+       print("in constructor of X")
+   def m1(self):
+       print("in m1 of X")
+   def __del__(self):
+       print("in destructor of X")
+
+x1=X()
+print(x1)
+x1.m1()
+x1=X()
+print(x1)
+
+
+O/P:
+----
+in constructor of X
+<__main__.X object at 0x000001831B3C3A90>
+in m1 of X
+in constructor of X
+in destructor of X
+<__main__.X object at 0x000001831B3B4F28>
+
+
+ex2:
+----
+class X:
+   def __init__(self):
+       print("in constructor of X")
+   def m1(self):
+       print("in m1 of X")
+   def __del__(self):
+       print("in destructor of X")
+
+x1=X()
+print(x1)
+x2=x1
+print(x2)
+x3=x2
+print(x3)
+x1=X()
+print(x1)
+x2=X()
+print(x2)
+x3=X()
+print(x3)
+
+
+O/P:
+----
+in constructor of X
+<__main__.X object at 0x0000018393D23A20>
+<__main__.X object at 0x0000018393D23A20>
+<__main__.X object at 0x0000018393D23A20>
+in constructor of X
+<__main__.X object at 0x0000018393D15EB8>
+<class '__main__.X'>
+in destructor of X
+<class '__main__.X'>
+
+
+Del:
+----
+"del" is a keyword,which removes give variables from the memory location.
+When ever variable is deleted from memory location,the variable pointed object 
+reference count is decreased by 1.
+
+ex3:
+----
+class X:
+   def __init__(self):
+       print("in constructor of X")
+   def m1(self):
+       print("in m1 of X")
+   def __del__(self):
+       print("in destructor of X")
+
+x1=X()
+print(x1)
+x2=x1
+print(x2)
+x3=x2
+print(x3)
+del x1
+del x2
+del x3
+
+
+O/P:
+----
+in constructor of X
+<__main__.X object at 0x00000152EF962A58>
+<__main__.X object at 0x00000152EF962A58>
+<__main__.X object at 0x00000152EF962A58>
+in destructor of X
+
+
+ex4:
+----
+class Emp:
+    """Emp app"""
+    empcount=0
+    def __init__(self,ename,eadd,eid,esal):
+
+       self.ename=ename
+        self.eadd=eadd
+        self.eid=eid
+        self.esal=esal
+        Emp.empcount=Emp.empcount+1
+    def __del__(self):
+        Emp.empcount=Emp.empcount-1
+
+e1=Emp("scott","dallas",7788,5000.00)
+e2=Emp("ravi","ravi",1744,10000.00)
+#del e2
+print("total no.of employees are :" ,Emp.empcount)
+
+
+O/P:
+----
+total no.of employees are : 2
+
+Day:
+----
+
+Inheritance:
+------------
+Preperties of one class to another class directly like a same class members is known as a inheritance.
+
+Class which is extends by another classs is known as super classs or base class.
+
+A class which is extending another class is known as subclass or derived class.
+
+Super class properties directly can be used with in the subclass like as a subclass members.
+
+
+ex:
+---
+class X:
+    a=1000
+    def m1(self):
+        print("in m1 of X")
+
+class Y(X):
+    b=2000
+    def __init__(self):
+        self.c=3000
+    def m2(self):
+        print("int m2 of Y")
+    def display(self):
+        print(Y.b)
+        print(self.c)
+        self.m2()
+        print(Y.a)
+        self.m1()
+y1=Y()
+y1.display()
+
+
+
+O/P:
+----
+2000
+3000
+int m2 of Y
+1000
+in m1 of X
+
+
+Note: Both Super class & subclass properties we can access by using subclass reference variable or by subclass
+
+ex:
+---
+class X:
+    a=1000
+    def m1(self):
+        print("in m1 of X")
+
+class Y(X):
+    b=2000
+    def __init__(self):
+        self.c=3000
+    def m2(self):
+        print("int m2 of Y")
+    def display(self):
+        print(Y.b)
+        print(self.c)
+        self.m2()
+        print(Y.a)
+        self.m1()
+
+print(Y.a)
+print(Y.b)
+y1=Y()
+print(y1.c)
+y1.m1()
+y1.m2()
+
+
+O/P:
+----
+1000
+2000
+3000
+in m1 of X
+int m2 of Y
+
+
+ex2:
+----
+class X:
+    def __init__(self):
+        print("in constructor of X")
+    def m1(self):
+        print("in m1 of X")
+
+class Y(X):
+    def m2(self):
+        print("in m2 of Y")
+    
+y1=Y()
+y1.m1()
+y1.m2()
+
+
+O/P:
+----
+in constructor of X
+in m1 of X
+in m2 of Y
+
+
+Object Class:-
+--------------
+Object class is a predefined class, which is defining builtins module.
+Object class is super class for every class in python.
+Object class properties we can use directly within every class.
+Object class properties we can access through every class reference variable.
+
+
+ex:
+---
+class X:
+    def m1(self):
+        print("in m1 of X")
+
+class Y(X):
+    def m2(self):
+        print("in m2 of Y")
+
+print(X.__bases__)
+print(Y.__bases__)
+
+y1=Y()
+p=y1.__hash__()
+print(p)
+
+y1.m1()
+y1.m2()
+
+
+O/P:
+----
+(<class 'object'>,)
+(<class '__main__.X'>,)
+141886248175
+in m1 of X
+in m2 of Y
+
+
+ex3:
+----
+class X:
+    def m1(self):
+        print("in m1 of X")
+
+class Y(X):
+    def m2(self):
+        print("in m2 of Y")
+
+y1=Y()
+print(y1)
+p=y1.__str__()
+print(p)
+
+
+O/P:
+----
+<__main__.Y object at 0x0000029E082D2BE0>
+<__main__.Y object at 0x0000029E082D2BE0>
+
+
+
+
+Types of Inheritance:
+----------------------
+
+1) Single Inheritance:
+----------------------
+The concept of inheriting from only one class to another class is known as a single inheritance.
+
+ex:
+---
+class X:
+    def m1(self):
+        print("in m1 of X")
+
+x1=X()
+a=x1.__hash__()
+print(a)
+x1.m1()
+
+
+O/P:
+----
+-9223371941492075611
+in m1 of X
+
+
+
+2) Multilevel:
+--------------
+Concept of inheriting the properties from multiple classes  in a concept of one after the another is known as a multilevel inheritance.
+
+ex:
+---
+class X:
+    def m1(self):
+        print("in m1 of X")
+class Y(X):
+    def m2(self):
+        print("in m2 of Y")
+class Z(Y):
+    def m3(self):
+        print("in m3 of Z")
+
+z1=Z()
+a=z1.__hash__()
+print(a)
+z1.m1()
+z1.m2()
+z1.m3()
+
+
+O/P:
+----
+174966031294
+in m1 of X
+in m2 of Y
+in m3 of Z
+
+
+3) Hirarchial Inheritance:
+--------------------------
+The concept of inheriting the properties from one class to multiple classes is known as a 
+Hirarchial Inheritance.
+
+ex:
+---
+class X:
+    def m1(self):
+        print("in m1 of X")
+class Y(X):
+    def m2(self):
+        print("in m2 of Y")
+class Z(X):
+    def m3(self):
+        print("in m3 of Z")
+
+y1=Y()
+a=y1.__hash__()
+print(a)
+y1.m1()
+y1.m2()
+
+
+z1=Z()
+b=z1.__hash__()
+print(b)
+z1.m1()
+z1.m3()
+
+
+O/P:
+----
+-9223371924432636984
+in m1 of X
+in m2 of Y
+-9223371924432640782
+in m1 of X
+in m3 of Z
+
+4) Multiple Inheritance:
+------------------------
+Concept of inheriting the properties from multiple classes into single class @ a time is known as a multipe inheritance.
+
+ex1:
+----
+class X:
+    def m1(self):
+        print("in m1 of X")
+class Y:
+    def m2(self):
+        print("in m2 of Y")
+class Z(X,Y):
+    def m3(self):
+        print("in m3 of Z")
+
+
+z1=Z()
+b=z1.__hash__()
+print(b)
+z1.m1()
+z1.m2()
+z1.m3()
+
+O/P:
+----
+135052772265
+in m1 of X
+in m2 of Y
+in m3 of Z
+
+
+ex2:
+----
+class X:
+    def m1(self):
+        print("in m1 of X")
+class Y:
+    def m1(self):
+        print("in m2 of Y")
+class Z(X,Y):
+    def m3(self):
+        print("in m3 of Z")
+
+
+z1=Z()
+b=z1.__hash__()
+print(b)
+z1.m1()
+z1.m3()
+
+
+
+O/P:
+----
+165544317865
+in m1 of X
+in m3 of Z
+
+
+5) cyclic Inheritance:
+----------------------
+The concept of inheriting the properties from  sub class is known as cyclic inheritance.
+Python doesn't support cyclic inheritance.
+
+
+ex:
+---
+class X(Z):
+    def m1(self):
+        print("in m1 of X")
+class Y(X):
+    def m1(self):
+        print("in m2 of Y")
+class Z(Y):
+    def m3(self):
+        print("in m3 of Z")
+
+
+z1=Z()
+
+
+O/P:  error msg
+----
+Traceback (most recent call last):
+  File "C:\Users\Ravi Kanth\Desktop\sample.py", line 1, in <module>
+    class X(Z):
+NameError: name 'Z' is not defined
+
+
+6) Hybrid Inheritance:
+----------------------
+Combination of single,multilevel,hyrarchal, multiple inhertances is known as a hybrid Inheritance.
+
+
+
+
+
+Day:
+----
+
+Polymorphism:-
+-------------
+
+poly ----> many
+morphism  ----> forms ---> functionalies/logics
+
+customer -----deposit----cash
+                         cheque
+                         dd
+  
+
+method overloading  --deposit(cash)
+                      deposit(dd,cheque)
+
+method overriding  ---class x:
+                             deposit(cash)
+                      class y(x):
+                             deposit(dd,cheque)
+                              
+            
+
+
+When ever we define multiple methods with the same name with same no.of parameters or different number of parameters within a class,
+by default python interpreter recognises last defined method only.
+
+
+ex1:
+----
+class X:
+    def m1(self):
+        print("in no param m1 of X")
+    def m1(self,a,b):
+        print("in two param m1 of X")
+    def m1(self,a):
+        print("in one param m1 of X")
+
+x1=X()
+x1.m1(100)
+x1.m1(10,20)
+
+
+O/P:
+----
+in one param m1 of X
+Traceback (most recent call last):
+  File "C:\Users\Ravi Kanth\Desktop\sample.py", line 11, in <module>
+    x1.m1(10,20)
+TypeError: m1() takes 2 positional arguments but 3 were given
+
+
+
+ex3:
+----
+class X:
+    def __init__(self):
+        print("in no param constructor of X")
+    def __init__(self,i):
+        print("in  one param constructor of X")
+
+x1=X(1000)
+x2=X()
+
+
+O/P:
+----
+in  one param constructor of X
+Traceback (most recent call last):
+  File "C:\Users\Ravi Kanth\Desktop\sample.py", line 8, in <module>
+    x2=X()
+TypeError: __init__() missing 1 required positional argument: 'i'
+
+
+
+Method Overriding:
+------------------
+The concept of defining multiple methods with the same name with same no.of parameters or defirrent no.of parameters one is in super & another in sub class is known as method overriding.
+
+When ever we override superclass method within subclass & by default subclass method will be executed,if subclass object is created.
+
+
+ex:
+---
+class X:
+    def m1(self):
+        print("in no param m1 of X") #old logic
+class Y(X):
+    def m1(self):
+        print("in no param m1 of Y") #new logic
+y1=Y()
+y1.m1()
+
+x1=X()
+x1.m1()
+
+
+O/P:
+----
+in no param m1 of Y
+in no param m1 of X
+
+
+ex2:
+----
+
+class X:
+    def __str__(self):
+        return "ravilella"
+
+x1=X()
+print(x1)
+
+
+O/P:
+-----
+ravilella
+
+
+Day:
+----
+
+ex:
+---
+class X:
+    def __init__(self,msg):
+        self.msg=msg
+    def __str__(self):
+        return self.msg
+    
+
+x1=X("ravilella")
+print(x1)
+x2=X("ravi")
+print(x2)
+x3=X("python")
+s1=str("django")
+print(s1)
+s2=str("restapi")
+print(s2)
+
+
+O/P:
+----
+ravilella
+ravi
+django
+restapi
+
+
+ex:
+---
+class Cust:
+    """Cust app"""
+    cbname="sbi"
+    def __init__(self,cname,cadd,cacno,cbal):
+        self.cname=cname
+        self.cadd=cadd
+        self.cacno=cacno
+        self.cbal=cbal
+    def __str__(self):
+        return self.cname+ " "+self.cadd+" "+str(self.cacno)+" "+str(self.cbal)+" " +Cust.cbname
+    def deposit(self,damt):
+        self.cbal=self.cbal+damt
+    def withdraw(self,wamt):
+        self.cbal=self.cbal-wamt
+    def display(self):
+        print(self.cname)
+        print(self.cadd)
+        print(self.cacno)
+        print(self.cbal)
+        print(Cust.cbname)
+
+c1=Cust("ravilella","california",1000,100000.00)
+c2=Cust("ravikanth","india",5000,200000.00)
+c3=Cust("ravi","india",2000,50000.00)
+
+x=[c1,c2,c3]
+print("Before sorting")
+for p in x:
+    print(p)
+x.sort(key=lambda c:c.cbal,reverse=True)
+print("After sorting")
+for q in x:
+    print(q)
+
+
+O/P:
+-----
+Before sorting
+ravilella california 1000 100000.0 sbi
+ravikanth india 5000 200000.0 sbi
+ravi india 2000 50000.0 sbi
+After sorting
+ravikanth india 5000 200000.0 sbi
+ravilella california 1000 100000.0 sbi
+ravi india 2000 50000.0 sbi
+
+
+
+Day:
+----
+
+ex1: Method overriding
+----
+class X:
+    def m1(self):
+        print("in m1 of X")
+    def m2(self):
+        print("in m2 of X")
+class Y(X):
+    def m1(self):
+        print("in m1 of Y")
+    def m3(self):
+        print("in m3 of Y")
+    def display(self):
+        super().m1()
+        self.m1()
+        self.m2()
+        self.m3()
+
+y1=Y()
+y1.display()
+
+
+O/P:
+----
+in m1 of X
+in m1 of Y
+in m2 of X
+in m3 of Y
+
+
+
+ex2:  constructor overriding
+----
+class X:
+    def __init__(self):
+        print("in constructor of X")
+      
+class Y(X):
+   def __init__(self):
+       print("in constructor of Y")
+       
+
+y1=Y()
+x1=X()
+
+
+O/P:
+----
+in constructor of Y
+in constructor of X
+
+
+ex3: accessing parent class super constructor
+----
+class X:
+    def __init__(self):
+        self.a=1000
+        self.b=2000
+      
+class Y(X):
+   def __init__(self):
+       super().__init__()
+       self.c=3000
+       self.d=4000
+       
+
+y1=Y()
+print(y1.a)
+print(y1.b)
+print(y1.c)
+print(y1.d)
+
+
+O/P:
+----
+1000
+2000
+3000
+4000
+
+
+
+
+Abstarction:
+------------
+The concept of hiding the properties of a class from the outside of a class is known as a Abstraction.
+
+We can hide the properties of a class from outside of a class by using "__" syntax
+
+Hidden properties of a class cann't be accessed from outside of a class.
+
+ex:
+---
+class X:
+    __a=1000
+    def __m1(self):
+        print("in mi in X")
+    def display(self):
+        print(X.__a)
+        self.__m1()
+x1=X()
+x1.display()
+print(X.__a)
+x1.__m1()
+
+
+O/P:
+----
+1000
+in mi in X
+Traceback (most recent call last):
+  File "C:\Users\Ravi Kanth\Desktop\sample.py", line 10, in <module>
+    print(X.__a)
+AttributeError: type object 'X' has no attribute '__a'
+
+
+Note:- We can access the hidden properties of a class from outside of class by using special syntax.
+
+ex4:
+---
+class X:
+    __a=1000
+    def __m1(self):
+        print("in mi in X")
+    def display(self):
+        print(X.__a)
+        self.__m1()
+x1=X()
+x1.display()
+print(x1._X__a)
+x1._X__m1()
+
+
+O/P:
+----
+1000
+in mi in X
+1000
+in mi in X
+
+
+ex5:
+----
+class X:
+    __a=1000
+    def __m1(self):
+        print("in mi in X")
+class Y(X):
+    __b=2000
+    def __m2(self):
+        print("in m2 of Y")
+    def display(self):
+        print(Y.__b)
+        self.__m2()
+        print(self._X__a)
+        self._X__m1()
+y1=Y()
+y1.display()
+
+
+O/P:
+-----
+2000
+in m2 of Y
+1000
+in m1 in X
+
+
+ex6:
+----
+
+# Pyhton program to illustrate store  
+# efficiently using pickle module  
+# Module translates an in-memory Python object  
+# into a serialized byte stream—a string of  
+# bytes that can be written to any file-like object. 
+  
+import pickle 
+  
+def storeData(): 
+    # initializing data to be stored in db 
+    Omkar = {'key' : 'Omkar', 'name' : 'Omkar Pathak', 
+    'age' : 21, 'pay' : 40000} 
+    Jagdish = {'key' : 'Jagdish', 'name' : 'Jagdish Pathak', 
+    'age' : 50, 'pay' : 50000} 
+  
+    # database 
+    db = {} 
+    db['Omkar'] = Omkar 
+    db['Jagdish'] = Jagdish 
+      
+    # Its important to use binary mode 
+    dbfile = open('examplePickle', 'wb') 
+      
+    # source, destination 
+    pickle.dump(db, dbfile)                   
+    dbfile.close() 
+  
+def loadData(): 
+    # for reading also binary mode is important 
+    dbfile = open('examplePickle', 'rb')      
+    db = pickle.load(dbfile) 
+    for keys in db: 
+        print(keys, '=>', db[keys]) 
+    dbfile.close()
+
+storeData()
+loadData()
+
+
+Regular Expression
+-----------------
+what is a regular expression?
+A string that defines a text matching pattern.
+
+emails id
+phone
+zip
+credit card
+
+
+jill rollnumber is 1001
+bob  rollnumber is 1002
+rob  rollnumber is 1003
+jack rollnumber is 1004
+
+regular expression
+  
+  \d\d\d\d
+
+extract rollnumbers
+
+1001
+1002
+1003
+1004
+
+what is advantage of using regex?
+writing only very few lines.
+
+text file
+A weight is 46kg
+B weight is 54kg
+C weight is 60kg
+D weight is 70kg
+ |
+extract 
+ |
+46 54 60 70
+
+without using regular expression
+fp=open('weights.txt','r')
+text=fp.read()
+
+weights=[]
+for i in range(len(text)-1):
+    sub=text[i:i+2]
+    if sub.isdecimal():
+       weights.append(sub)
+
+print(weights)
+
+with regular expression
+------------------
+import re
+fp=open('weights.txt','r')
+text=fp.read()
+pattern=r'\d\d'
+regex=re.compile(pattern)
+weights=regex.findall(text)
+
+print(weights)
+
+re module basics
+----------------
+python supports regex through re module
+import re module for using regex
+
+ import re
+
+no need to explicitly install this module
+
+re module functions
+-------------------
+match
+search
+findall
+finditer
+sub(replstring,text)
+split(text)
+
+
+
+
+
+
+
+
+
+
+
+
+Database:-
+  -oracle 
+  
+
+python ---oracle 
+
+
+1)Download and install the appropriate cx_Oracle module
+
+C:\Python37\Scripts>pip install cx_Oracle
+
+
+
+student    institute           faculty
+ 
+python     cx_Oracle           oracle   
+
+iterators:-
+----------
+
+ex1:
+----
+class PowTwo:
+    def __init__(self,max=0):
+        self.max=max
+    def __iter__(self):
+        self.n=0
+        return self
+    def __next__(self):
+        if self.n<=self.max:
+            result=2 ** self.n
+            self.n+=1
+            return result
+        else:
+            raise StopIteration
+
+p=PowTwo(5)
+it=iter(p)
+print(next(it))
+print(next(it))
+print(next(it))
+print(next(it))
+print(next(it))
+print(next(it))
+print(next(it))
+
+
+O/P:
+----
+1
+2
+4
+8
+16
+32
+Traceback (most recent call last):
+  File "C:\Users\Ravi Kanth\Desktop\sample.py", line 23, in <module>
+    print(next(it))
+  File "C:\Users\Ravi Kanth\Desktop\sample.py", line 13, in __next__
+    raise StopIteration
+StopIteration
+
+ex2:
+----
+class PowTwo:
+    def __init__(self,max=0):
+        self.max=max
+    def __iter__(self):
+        self.n=0
+        return self
+    def __next__(self):
+        if self.n<=self.max:
+            result=2 ** self.n
+            self.n+=1
+            return result
+        else:
+            raise StopIteration
+
+p=PowTwo(2)
+it=iter(p)
+while True:
+    try:
+        print(next(it))
+    except(StopIteration):
+        break
+
+
+ex3:
+----
+x=[10,20,30,40]
+it=iter(x)
+print(next(it))
+print(next(it))
+print(next(it))
+print(next(it))
+print(next(it))
+
+O/P:
+----
+10
+20
+30
+40
+Traceback (most recent call last):
+  File "C:\Users\Ravi Kanth\Desktop\sample.py", line 7, in <module>
+    print(next(it))
+StopIteration
+
+ex4:
+----
+x=[10,20,30,40]
+for p in x:
+    print(p)
+
+O/P:
+----
+10
+20
+30
+40
+
+
+Infinite iterator:
+------------------
+
+ex1:
+----
+class InfIter:
+    def __iter__(self):
+        self.num=1
+        return self
+
+    def __next__(self):
+        num=num=self.num
+        self.num+=2
+        return num
+
+i=InfIter()
+it=iter(i)
+while True:
+    print(next(it))
+
+
+O/P:
+-----
+Infinity loop
+
+
+Day:
+----
+Generator functions:
+-----------
+
+
+
+
+
+
+
+
+Day:
+----
+closure functions:
+------------------
+ex1:
+----
+def print_msg(msg):
+    def printer():
+        print(msg)
+    return printer
+
+myvar=print_msg("python")
+myvar()
+del print_msg
+myvar()
+
+
+ex2:
+----
+def make_multiplier_of(n):
+    def multiplier(x):
+        return x*n
+    return multiplier
+
+myvar=make_multiplier_of(10)
+del make_multiplier_of
+v=myvar(5)
+print(v)
+
+
+O/P:
+----
+50
+
+
+day:
+----
+Decorators:
+-----------
+ex1:
+---
+def make_pretty(func):
+    def inner():
+        print("I got decorated")
+        func()
+    return inner
+def ordinary():
+    print("Iam ordiary")
+ordinary()
+
+
+O/P:
+----
+Iam ordiary
+
+ex2:
+----
+def divide(a,b):
+    return a/b
+p=divide(100,20)
+print(p)
+
+
+O/P:
+----
+5.o
+
+ex3:
+-----
+def make_pretty(func):
+    def inner(a,b):
+        print("I going to divide",a,"and",b)
+        if b==0:
+            print("oops! cannot divide")
+            return
+        return func(a,b)
+    return inner
+
+@smart_divide
+def divide(a,b):
+    return a/b
+p=divide(100,20)
+print(p)
+
+
+To perform data analysis we need below modules
+-----------------------------------------------
+pandas
+NumPy
+SciPy
+matplotlib
+
+ex1:
+----
+import matplotlib.pyplot as plt
+plt.plot([1,2,3],[5,6,7])
+plt.show()
+
+ex2:
+----
+import matplotlib.pyplot as plt
+x=[1,2,3]
+y=[5,7,4]
+x2=[1,2,3]
+y2=[10,14,12]
+plt.plot(x,y,label="First Line")
+plt.plot(x2,y2,label="Second Line")
+plt.xlabel("plot number")
+plt.ylabel("Important var")
+plt.show()
+
+
+
+Ex3:
+----
+
+
+Day:
+----
+command line arguments:
+-----------------------
+ex1:
+----
+import sys
+print("begin")
+#print(sys.argv)
+for p in sys.argv:
+    print(p)
+print("end")
+
+
+ex2:
+----
+import sys
+print("begin")
+x=int(sys.argv[1])
+y=int(sys.argv[2])
+print(x+y)
+print("end")
+
+
+ex3:
+----
+print("begin")
+a=1000
+b=2000
+if __name__=="__main__":
+    print(a+b)
+    print(__name__)
+print("end")
+
+
+
+ex4:
+----
+import sys
+print("begin")
+if __name__=="__main__":
+    a=int(sys.argv[1])
+    b=int(sys.argv[2])
+    print(a+b)
+print("end")
+
+
+O/P:
+----
+python "C:\Users\Ravi Kanth\Desktop\sample.py" 100 200
+
+
+begin
+300
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
