@@ -175,3 +175,7 @@ https://www.bogotobogo.com/DevOps/Terraform/Terraform-Introduction-AWS-elb-nginx
 Appdynamics
 ----------------
 https://vimeo.com/album/3519087
+
+Jenkins pipeline
+---------------------
+https://github.com/jenkinsci/pipeline-examples/tree/master/pipeline-examples
