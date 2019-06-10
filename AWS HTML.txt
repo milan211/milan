@@ -179,3 +179,4 @@ https://vimeo.com/album/3519087
 Jenkins pipeline
 ---------------------
 https://github.com/jenkinsci/pipeline-examples/tree/master/pipeline-examples
+https://wilsonmar.github.io/jenkins2-pipeline/
